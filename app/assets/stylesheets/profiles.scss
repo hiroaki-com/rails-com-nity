@@ -1,0 +1,57 @@
+// Place all the styles related to the profiles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#profiles-new, #profiles-edit, #profiles-create, #profiles-update {
+    form {
+        .form-group {
+            margin :10px 0;
+
+            label {
+                margin-bottom: 5px;
+                display: block;
+            }
+            input[type="text"],input[type="number"] {
+                width :100%;
+                padding: 5px;
+                border-radius: 5px;
+                border: 1px solid#ccc;
+                appearance: none;
+                -webkit-apperance :none;
+                -moz-apperance :none;
+            }
+        } 
+
+        .image-preview {
+            img {
+                max-width: 200px;
+            }
+        }
+        
+        .submit-block {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 15px 0;
+            .button {
+                display       : inline-block;
+                border-radius : 5%;          /* 角丸       */
+                font-size     : 11pt;        /* 文字サイズ */
+                text-align    : center;      /* 文字位置   */
+                cursor        : pointer;     /* カーソル   */
+                padding       : 10px 16px;   /* 余白       */
+                background    : #333;     /* 背景色     */
+                color         : #ffffff;     /* 文字色     */
+                line-height   : 1em;         /* 1行の高さ  */
+                transition    : .3s;         /* なめらか変化 */
+                box-shadow    : 4px 4px 4px #666666;  /* 影の設定 */
+                border        : 2px solid #333;    /* 枠の指定 */
+            }
+              .button:hover {
+                box-shadow    : none;        /* カーソル時の影消去 */
+                color         : #333;     /* 背景色     */
+                background    : #ffffff;     /* 文字色     */
+            }
+        }        
+    }
+}

@@ -1,0 +1,89 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+image {
+    max-width: 100%;
+}
+
+#welcome-index {
+    .content-wrapper {
+        display: flex;
+        justify-content: space-between;
+
+       .content-block {
+            border: 2px solid #000;
+            border-radius: 5px;
+            padding:20px;
+            width: 65%;
+        
+        .content { 
+          border: 2px solid #000;
+          border-radius: 5px;
+          padding: 15px;
+          margin-bottom: 10px;
+
+          .user-about {
+             display: flex;
+
+             .image {
+                width: 12%; 
+                             
+                  img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 90px;
+                   }              
+             }
+
+             .profile {
+              margin-left: 20px;
+
+              .name-history {
+                display: flex;
+                width: 100%;
+                margin-bottom: 10px;
+
+                .name {
+                  font-weight: bold;
+                } 
+
+               .learning-history {
+                 margin-left: 20px;
+               }
+              }
+             }
+             .purpose {
+                 width: 100%;  
+                 font-size: 13px;      
+             }
+           }
+           .images {
+              img {
+                max-width: 30%;
+                max-height: 100%;
+                object-fit: cover;
+                border-radius: 5px;
+              }
+           }
+         }
+       }
+
+    .sidebar {
+        border: 2px solid #000;
+        border-radius: 5px;
+        width:20%;
+        padding: 20px;
+
+         .box {
+              background-color: #000;
+              width: 100px;
+              height: 100px;
+              margin: 10px auto;
+              border-radius: 5px;
+         }
+    }        
+  }
+}
+

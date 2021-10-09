@@ -1,0 +1,61 @@
+<div class="content-wrapper">
+  <div class="content-block">
+   <% @posts.each do |post| %>
+    <div class="content">
+     <div class="user-about">
+       <div class="image">
+        <% if post.user.image.attached? %>
+         <%= image_tag post.user.image %>
+        <% else %>
+          <%= image_tag "nouser.png"%>
+        <% end %>
+       </div>
+      
+       <div class="profile">
+        <div class="name-history">
+         <div class="name">
+          <%= post.user.name %>
+         </div>
+         <div class="learning-history">
+          <%= "学習歴： #{post.user.learning_history}年" %> 
+         </div>
+       </div>
+       <div class="purpose">
+        <%= "Rails学習の目的 : #{post.user.purpose}" %>
+         
+       </div>
+      </div> 
+     </div>
+
+     <div class="text">
+       <p><%= post.content %></p>
+     </div>
+
+     <% if post.images.attached? %>
+        <div class="images">
+          <% post.images.each do |image| %>
+            <%= image_tag image %>
+          <% end %>
+        </div>
+     <% end %>
+
+     <div class="action-menu">
+        <div class="like">
+        
+        </div>
+        <div class="coment"> 
+        
+        </div>
+     </div>
+    </div>
+   <% end %>
+  </div>
+  
+
+  <div class="sidebar">
+    <div class="box"></div>
+    <div class="box"> </div>  
+  </div>
+
+</div>
+
