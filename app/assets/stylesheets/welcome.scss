@@ -12,10 +12,11 @@ image {
         justify-content: space-between;
 
        .content-block {
-            border: 2px solid #000;
+            border: 1px solid #000;
             border-radius: 5px;
             padding:20px;
             width: 65%;
+            background-color: white;
         
         .content { 
           border: 2px solid #000;
@@ -71,17 +72,22 @@ image {
        }
 
     .sidebar {
-        border: 2px solid #000;
+        border: 1px solid #000;
         border-radius: 5px;
         width:20%;
         padding: 20px;
+        background-color: white;
 
-         .box {
-              background-color: #000;
+         .box {            
+              border: 1px solid #000;
               width: 100px;
               height: 100px;
               margin: 10px auto;
               border-radius: 5px;
+              /* 子要素<p>に対して上下左右中央寄せ */
+              display: flex;
+              align-items: center;
+              justify-content: center;
          }
     }        
   }

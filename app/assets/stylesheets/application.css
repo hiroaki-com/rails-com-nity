@@ -17,6 +17,7 @@
 body {
     max-width: 1080px;
     margin: 0 auto;
+    background-color: #f6f6f6;
 }
 
 
@@ -30,7 +31,11 @@ body {
     font-size: 20px;
     text-decoration: none;
     font-weight: bolder; 
+    color: #333;          /* ロゴの文字異色　*/
     font-family: cursive; 
+    padding: 5px 10px;
+    background-color: white; /* ロゴの背景色　*/
+    border-radius: 5px;
 }
 
 #header #nav {
@@ -43,6 +48,7 @@ body {
     background-color: #333;
     display: inline-block;
     border-radius: 5px;
+    
 }
    
 #header #nav li a {
@@ -50,6 +56,16 @@ body {
     color: #fff;
     /* クリック範囲を親要素まで拡大*/
     display: block;
+    transition    : .3s;         /* なめらか変化 */
+    border        : 2px solid #333;    /* 枠の指定 */    
+    border-radius: 5px;
+}
+
+/* /app/assets/stylesheets/users.scss を参考にデザイン・hoverを設定 */
+#header #nav li a:hover {
+    color         : #333;       
+    background    : #ffffff;  
+    border        : 2px solid #333;    /* 枠の指定 */    
 }
 
 #footer {
