@@ -34,7 +34,7 @@ body {
     color: #333;          /* ロゴの文字異色　*/
     font-family: cursive; 
     padding: 5px 10px;
-    background-color: white; /* ロゴの背景色　*/
+    /* background-color: white;  ロゴの背景色　*/
     border-radius: 5px;
 }
 
