@@ -6,7 +6,7 @@ class ProfilesController < ApplicationController
     end
 
     def new
-        #　プロフィール作成後に/profile/newへのアクセスから回避
+        #　プロフィール作成後に/profile/newへのアクセスを回避
         return redirect_to edit_profile_path(current_user.profile) if current_user.profile.present?
         @profile = Profile.new
     end
