@@ -68,6 +68,16 @@ body {
     border        : 2px solid #333;    /* 枠の指定 */    
 }
 
+#header #nav li a[href="/posts/new"] {
+    text-decoration: none;
+    color: rgb(240, 21, 21);
+    /* クリック範囲を親要素まで拡大*/
+    display: block;
+    transition    : .3s;         /* なめらか変化 */
+    border        : 2px solid #333;    /* 枠の指定 */    
+    border-radius: 5px;
+}
+
 #footer {
     background-color: #333;
     text-align: center;
