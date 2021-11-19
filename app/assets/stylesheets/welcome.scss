@@ -8,8 +8,9 @@ image {
 
 #welcome-index {
     .content-wrapper {
-        display: flex;
+        display: flex; /* 要素の横並び */
         justify-content: space-between;
+        margin: 0 20px;
 
        .content-block {
             border: 1px solid #000;
@@ -98,4 +99,5 @@ image {
     }        
   }
 }
+
 

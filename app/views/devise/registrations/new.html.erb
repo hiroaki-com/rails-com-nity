@@ -1,5 +1,6 @@
 <h2>新規登録</h2>
 
+<div class= "padding-both-side">
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
@@ -27,3 +28,4 @@
 <% end %>
 
 <%= render "devise/shared/links" %>
+</div>

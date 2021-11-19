@@ -1,0 +1,113 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+    margin: 0 auto;
+    background-color: #f6f6f6;
+}
+
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    /* ロゴ------------------------------------------- */
+    .logo a{
+        font-size: 20px;
+        text-decoration: none;
+        font-weight: bolder; 
+        color: #333;          /* ロゴの文字異色　*/
+        font-family: cursive; 
+        padding: 5px 10px;
+        /* background-color: white;  ロゴの背景色　*/
+        border-radius: 5px;    
+    }
+    /* ナブ------------------------------------------- */
+    #nav {
+        list-style: none;
+        li {
+            width: 90px;
+            text-align: center;
+            background-color: #333;
+            display: inline-block;
+            border-radius: 5px;
+            a {
+                text-decoration: none;
+                color: #fff;
+                /* クリック範囲を親要素まで拡大*/
+                display: block;
+                transition    : .3s;         /* なめらか変化 */
+                border        : 2px solid #333;    /* 枠の指定 */    
+                border-radius: 5px;    
+            }
+            /* ホバー------------------------------------------------------- */
+            a:hover {
+                color         : #333;       
+                background    : #ffffff;  
+                border        : 2px solid #333;    /* 枠の指定 */    
+            }        
+        }
+    }  
+}
+
+/* フッター----------------------------------------------------------------- */
+#footer {
+    background-color: #333;
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+    width: auto;
+}
+
+#footer p {
+    margin: 0;
+    font-size: 12px;
+}
+
+
+/* notice.alert------------------------------------------------------------- */
+.toast {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.toast .notice {
+    background-color: rgba(224, 187, 93, 0.87);
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.toast .alert {
+    background-color: #980a05e8;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* 新規登録・ログイン画面・プロフ・編集・などフォーム左右の空白調整----------------------------------*/
+.padding-both-side {
+    padding: 0 15%;
+}
+
+/* ジャンプリンク------------------------------------------------------- */
+.skip-top {
+    text-align: center;
+  }
