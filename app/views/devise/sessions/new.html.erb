@@ -1,5 +1,6 @@
 <h2>ログイン</h2>
 
+<div class= "padding-both-side">
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
     <%= f.label :email ,"メールアドレス" %><br />
@@ -24,3 +25,5 @@
 <% end %>
 
 <%= render "devise/shared/links" %>
+
+</div>
