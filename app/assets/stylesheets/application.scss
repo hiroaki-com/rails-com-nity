@@ -25,6 +25,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+    height: 70px;
     /* ロゴ------------------------------------------- */
     .logo a{
         font-size: 20px;
@@ -35,6 +36,13 @@ body {
         padding: 5px 10px;
         /* background-color: white;  ロゴの背景色　*/
         border-radius: 5px;    
+    }
+}
+    /* スマホ時消す----------------------------------------------------------------------------------- */
+    @media (max-width: 600px) {
+        .hide-sph {
+           display: none;
+        }
     }
     /* ナブ------------------------------------------- */
     #nav {
@@ -63,7 +71,113 @@ body {
             }        
         }
     }  
+
+/* -------------------------------------------------------------------------------------------------  */
+
+/* ハンバーガー　CSS---------------------------------------------------------------------------------- */
+@media (min-width: 601px) {
+    .hide-pc {
+       display: none;
+    }
 }
+
+.menu-btn {
+    margin-right: 20px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    height: 45px;
+    width: 45px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background-color: #3d474e89;
+    border-radius: 5px;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+}
+.menu-btn span:before {
+    bottom: 8px;
+}
+.menu-btn span:after {
+    top: 8px;
+}
+
+
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+#menu-btn-check {
+    display: none;
+}
+
+#menu-btn-check:checked ~ .menu-content {
+    left: 0;/*メニューを画面内へ*/
+}
+
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;/*leftの値を変更してメニューを画面外へ*/
+    z-index: 80;
+    background-color: #0a0a0a5b;
+    transition: all 0.5s;/*アニメーション設定*/
+}
+
+.menu-content ul {
+    padding: 70px 10px 0;
+}
+.menu-content ul li {
+    border-bottom: solid 1px #ffffff;
+    list-style: none;
+}
+.menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+    color:#ffffff;
+    text-decoration: none;
+    padding: 9px 15px 10px 0;
+    position: relative;
+}
+.menu-content ul li a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px #ffffff;
+    border-right: solid 2px #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 16px;
+}
+
+/* ------------------------------------------------------------ハンバーガー　CSS */
+
+
+
 
 /* フッター----------------------------------------------------------------- */
 #footer {
