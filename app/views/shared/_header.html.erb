@@ -1,27 +1,52 @@
 <div id="header">
-  <div class="logo">
-    <a href="/">Rails Com_Nity</a>
-  </div>
-  <div class="link"></div>
-    <ul id="nav">
-      <% if user_signed_in? %>
-        <li>
-          <%= link_to "投稿 ♪", new_post_path %>
-        </li>  
-         <li>
-          <%= link_to "プロフ", new_profile_path %>
-        </li>  
-        <li>
-          <%= link_to(destroy_user_session_path, method: :delete, data: {confirm: "ログアウトしますか？"}) do %><i class="fas fa-sign-out-alt" title="Logout"></i><span class= "hide-sp"> Out</span><% end %>
-        </li>
-      <% else %>
-        <li>
-          <%= link_to "新規登録", new_user_registration_path %>
-        </li>
-        <li>
-          <%= link_to(new_user_session_path) do %><i class="fas fa-sign-in-alt" title="Login"></i><span class= "hide-sp"> Login</span><% end %>
-        </li>  
-      <% end %>
-    </ul>  
+
+    <div class="logo">
+      <a href="/">Rails Com_Nity</a>
+    </div>
+    
+    <div class="link hide-sph">
+      <ul id="nav">
+        <% if user_signed_in? %>
+          <li>
+            <%= link_to "投稿 ♪", new_post_path %>
+          </li>  
+           <li>
+            <%= link_to "プロフ", new_profile_path %>
+          </li>  
+          <li>
+            <%= link_to(destroy_user_session_path, method: :delete, data: {confirm: "ログアウトしますか？"}) do %><i class="fas fa-sign-out-alt" title="Logout"></i><span class= "hide-sp"> Out</span><% end %>
+          </li>
+        <% else %>
+          <li>
+            <%= link_to "新規登録", new_user_registration_path %>
+          </li>
+          <li>
+            <%= link_to(new_user_session_path) do %><i class="fas fa-sign-in-alt" title="Login"></i><span class= "hide-sp"> Login</span><% end %>
+          </li>  
+        <% end %>
+      </ul>  
+    </div>
+
+
+    <div class="hamburger-menu hide-pc">
+          <input type="checkbox" id="menu-btn-check">
+          <label for="menu-btn-check" class="menu-btn"><span></span></label>
+          <div class="menu-content">
+              <ul>
+                  <li>
+                      <a href="/">メニューリンク1</a>
+                  </li>
+                  <li>
+                      <a href="/">メニューリンク2</a>
+                  </li>
+                  <li>
+                      <a href="/">メニューリンク3</a>
+                  </li>
+              </ul>
+         </div>
+    </div>
+
 </div>
+
+
 

@@ -2,15 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-image {
-    max-width: 100%;
-}
-
 #welcome-index {
     .content-wrapper {
-        display: flex; /* 要素の横並び */
+        
         justify-content: space-between;
         margin: 0 20px;
+        
+        width: 1000px;
+        display: -webkit-flex;
+        display: flex;
+
 
        .content-block {
             border: 1px solid #000;
@@ -18,6 +19,10 @@ image {
             padding:20px;
             width: 65%;
             background-color: white;
+
+            display: block;
+            width: 660px;
+            margin-right: 20px;
         
         .content { 
           border: 2px solid #000;
@@ -81,9 +86,13 @@ image {
     .sidebar {
         border: 1px solid #000;
         border-radius: 5px;
-        width:20%;
+        width: 320px;
         padding: 20px;
         background-color: white;
+
+        .sidebar__item {
+          margin-bottom: 20px;
+        }
 
          .box {            
               border: 1px solid #000;
@@ -100,4 +109,15 @@ image {
   }
 }
 
+.sidebar__item--fixed {
+  position: sticky;
+  margin-bottom: 0;
+  margin-top: 40px;
+  top: 10px;
+  z-index: 1;
+}
 
+/* 写真--------------------------------------------- */
+image {
+  max-width: 100%;
+}
