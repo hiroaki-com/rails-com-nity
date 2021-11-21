@@ -17,7 +17,6 @@
 body {
     margin: 0 auto;
     background-color: #f6f6f6;
-    width: auto;
 }
 
 
@@ -25,7 +24,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 20px 0 0;
     height: 60px;
     /* ヘッダー固定作業 */
     position: fixed;
@@ -40,7 +39,7 @@ body {
         font-size: 20px;
         text-decoration: none;
         font-weight: bolder; 
-        color: #333;          /* ロゴの文字異色　*/
+        color: rgba(51, 51, 51, 0.998);          /* ロゴの文字異色　*/
         font-family: cursive; 
         padding: 5px 10px;
         /* background-color: white;  ロゴの背景色　*/
@@ -96,13 +95,14 @@ body {
     top: 10px;
     right: 10px;
     display: flex;
-    height: 45px;
+    height: 35px;
     width: 45px;
     justify-content: center;
     align-items: center;
     z-index: 90;
     background-color: #3d474e89;
     border-radius: 5px;
+    margin-top: 5px;
 }
 .menu-btn span,
 .menu-btn span:before,
@@ -203,12 +203,11 @@ body {
 
 /* フッター----------------------------------------------------------------- */
 #footer {
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.601);
     text-align: center;
     color: white;
     padding: 10px 0;
     margin-top: 20px;
-    width: auto;
 }
 
 #footer p {
