@@ -3,12 +3,13 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #welcome-index {
+  margin-top: 60px; /* header fixed 分の余白 */
+
     .content-wrapper {
         
         justify-content: space-between;
-        margin: 0 20px;
-        
-        width: 1000px;
+        margin: 0 20px;        
+        min-width: 90;
         display: -webkit-flex;
         display: flex;
 
@@ -16,13 +17,11 @@
        .content-block {
             border: 1px solid #000;
             border-radius: 5px;
-            padding:20px;
-            width: 65%;
+            padding:20px;            
             background-color: white;
-
             display: block;
-            width: 660px;
-            margin-right: 20px;
+            width: 100%;
+            margin-right: 10px;            
         
         .content { 
           border: 2px solid #000;
@@ -63,13 +62,18 @@
              }
              .purpose {
                  width: 100%;  
-                 font-size: 13px;      
+                 font-size: 0.8em;      
              }
            }
 
+           .text {
+              font-size: 0.9em;
+           }
+
            .post-times {
-            font-size: 13px;
+            font-size: 0.8px;
             margin-top: 5px;
+            text-align: right;
           }
 
            .images {
@@ -86,7 +90,7 @@
     .sidebar {
         border: 1px solid #000;
         border-radius: 5px;
-        width: 320px;
+        width: auto;
         padding: 20px;
         background-color: white;
 
@@ -122,3 +126,4 @@ image {
   max-width: 100%;
   height: auto;
 }
+
