@@ -1,5 +1,5 @@
 <div class="padding-both-side">
-    <h2>投稿を作成する</h2>
+    <h2>新規投稿</h2>
     <%= form_with model: @post, local: true do |f| %>
         <%= f.text_area :content, rows: 5 %>
         <%= f.file_field :images, multiple: true %><br>
