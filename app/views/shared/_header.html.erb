@@ -33,14 +33,14 @@
           <label for="menu-btn-check" class="menu-btn"><span></span></label>
           <div class="menu-content">
               <ul>
-                  <li>
-                      <a href="/">メニューリンク1</a>
+                  <li>                      
+                      <%= link_to(new_post_path) do %><i class="far fa-edit" title="新規投稿"></i><span class= "hide-sp"> 新規投稿</span><% end %>              
                   </li>
-                  <li>
-                      <a href="/">メニューリンク2</a>
+                  <li>                      
+                      <%= link_to(new_profile_path) do %><i class="fas fa-users" title="プロフィール"></i><span class= "hide-sp"> プロフィール編集</span><% end %>              
                   </li>
-                  <li>
-                      <a href="/">メニューリンク3</a>
+                  <li class="logout">
+                      <%= link_to(destroy_user_session_path, method: :delete, data: {confirm: "ログアウトしますか？"}) do %><i class="fas fa-sign-out-alt" title="Logout"></i><span class= "hide-sp font-color"> ログアウト</span><% end %>              
                   </li>
               </ul>
          </div>
