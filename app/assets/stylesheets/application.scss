@@ -17,6 +17,7 @@
 body {
     margin: 0 auto;
     background-color: #f6f6f6;
+    width: auto;
 }
 
 
@@ -25,7 +26,15 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
-    height: 70px;
+    height: 60px;
+    /* ヘッダー固定作業 */
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+
     /* ロゴ------------------------------------------- */
     .logo a{
         font-size: 20px;
@@ -59,7 +68,7 @@ body {
                 /* クリック範囲を親要素まで拡大*/
                 display: block;
                 transition    : .3s;         /* なめらか変化 */
-                border        : 2px solid #333;    /* 枠の指定 */    
+                border        : 0px solid #333;    /* 枠の指定 */    
                 border-radius: 5px;    
             }
 
@@ -67,7 +76,7 @@ body {
             a:hover {
                 color         : #333;       
                 background    : #ffffff;  
-                border        : 2px solid #333;    /* 枠の指定 */    
+                border        : 1px solid #333;    /* 枠の指定 */    
             }        
         }
     }  
@@ -154,10 +163,9 @@ body {
     list-style: none;
 }
 
-/* ログアウトのリンクはメニューの下部に表示 */
+/* ログアウトのリンクのみメニューの下部に表示 */
 .logout {
-    margin-top:100px ;
-    border-top: solid 1px #fff;
+    margin-top:150px ;
     .fa-sign-out-alt {
         color: #fff;
     }

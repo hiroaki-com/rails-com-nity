@@ -32,7 +32,10 @@
           <input type="checkbox" id="menu-btn-check">
           <label for="menu-btn-check" class="menu-btn"><span></span></label>
           <div class="menu-content">
+            <% if user_signed_in? %>
               <ul>
+                  <li>                      
+                       <%= link_to(root_path) do %><i class="fas fa-home icon fa-1x" title="Top"></i><span class= "hide-sp"> Top</span><% end %>
                   <li>                      
                       <%= link_to(new_post_path) do %><i class="far fa-edit" title="新規投稿"></i><span class= "hide-sp"> 新規投稿</span><% end %>              
                   </li>
@@ -43,6 +46,16 @@
                       <%= link_to(destroy_user_session_path, method: :delete, data: {confirm: "ログアウトしますか？"}) do %><i class="fas fa-sign-out-alt" title="Logout"></i><span class= "hide-sp font-color"> ログアウト</span><% end %>              
                   </li>
               </ul>
+            <% else %>
+              <ul>
+                  <li>                      
+                       <%= link_to(new_user_session_path) do %><i class="fas fa-sign-in-alt" title="Login"></i><span class= "hide-sp"> Login</span><% end %>
+                  </li>
+                  <li>                      
+                      <%= link_to(new_user_registration_path) do %><i class="far fa-edit" title="新規登録"></i><span class= "hide-sp"> 新規登録 ~ Welcome to our community ! ~</span><% end %>              
+                  </li>             
+              </ul>
+            <% end %>
          </div>
     </div>
 
