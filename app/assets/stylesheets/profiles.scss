@@ -3,6 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #profiles-new, #profiles-edit, #profiles-create, #profiles-update {
+    margin-top: 60px; /* header fixed 分の余白 */
+    
     form {
         .form-group {
             margin :10px 0;
