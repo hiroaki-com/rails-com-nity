@@ -54,7 +54,9 @@
     align-items: center;
     justify-content: center;
     max-width: 170px;
-    text-decoration: none;
+    .underline {
+　　　　　text-decoration: none;
+　　　}
         .button {
             display       : block;
             border-radius : 5%;          /* 角丸       */
