@@ -1,4 +1,7 @@
 <h2>ログイン</h2>
+<div class="gest-login">
+  <%= link_to 'ゲストログイン（閲覧用）', users_guest_sign_in_path, class: "button", method: :post, style: 'text-align: center' %>
+</div>
 
 <div class= "padding-both-side">
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>

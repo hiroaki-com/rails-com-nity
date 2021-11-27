@@ -46,3 +46,30 @@
     }
 
 }
+
+/* ゲストユーザーログイン機能実装のため（.action）からデザイン拝借-------------- */
+.gest-login {
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 150px;
+        .button {
+            display       : block;
+            border-radius : 5%;          /* 角丸       */
+            font-size     : 12pt;        /* 文字サイズ */            
+            text-align    : center;      /* 文字位置   */
+            cursor        : pointer;     /* カーソル   */
+            padding       : 10px 16px;   /* 余白       */
+            background    : rgba(228, 59, 59, 0.526);     /* 背景色     */
+            color         : black;     /* 文字色     */
+            line-height   : 1em;         /* 1行の高さ  */
+            transition    : .3s;         /* なめらか変化 */
+            border        : 2px solid #333;    /* 枠の指定 */
+        }
+          .button:hover {
+            box-shadow    : none;        /* カーソル時の影消去 */
+            color         : #333;     /* 背景色     */
+            background    : #ffffff;     /* 文字色     */
+        }   
+}
