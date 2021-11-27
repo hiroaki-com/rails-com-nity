@@ -54,9 +54,6 @@
     align-items: center;
     justify-content: center;
     max-width: 170px;
-    .underline {
-　　　　　text-decoration: none;
-　　　}
         .button {
             display       : block;
             border-radius : 5%;          /* 角丸       */
@@ -75,4 +72,8 @@
             color         : #333;     /* 背景色     */
             background    : #ffffff;     /* 文字色     */
         }   
+}
+
+.underline {
+   text-decoration: none;
 }
