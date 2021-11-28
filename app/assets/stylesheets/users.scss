@@ -54,16 +54,19 @@
     align-items: center;
     justify-content: center;
     max-width: 170px;
+
         /* link_toに無理やりクラス付けして下線を削除 */
         .underline {
             text-decoration: none;
         }
+  
         .button {
             display       : block;
             border-radius : 5%;          /* 角丸       */
             font-size     : 17px;        /* 文字サイズ */            
             text-align    : center;      /* 文字位置   */
             cursor        : pointer;     /* カーソル   */
+
             padding       : 15px 0px;   /* 余白       */
             background    : rgba(248, 4, 4, 0.752);     /* 背景色     */
             color         : rgb(244, 241, 241);     /* 文字色     */
@@ -78,3 +81,4 @@
         }   
         
 }
+
