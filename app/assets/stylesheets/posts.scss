@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #posts-new, #posts-edit, #posts-create, #posts-update {
-    margin-top: 60px; /* header fixed 分の余白 */
+    margin-top: 60px; /* header fixed 分の余白 cf.application.scss */
     
     form {
         textarea {

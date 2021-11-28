@@ -72,7 +72,7 @@
             color         : rgb(244, 241, 241);     /* 文字色     */
             line-height   : 1em;         /* 1行の高さ  */
             transition    : .3s;         /* なめらか変化 */
-            border        : 2px solid #333;    /* 枠の指定 */        
+            border        : 2px solid red;    /* 枠の指定 */        
         }
           .button:hover {
             box-shadow    : none;        /* カーソル時の影消去 */
