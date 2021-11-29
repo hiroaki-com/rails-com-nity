@@ -37,8 +37,7 @@ body {
     /* ロゴ------------------------------------------- */
     .logo a{
         font-size: 15px;
-        text-decoration: none;
-        font-weight: bolder; 
+        text-decoration: none; 
         color: #fff;          /* ロゴの文字異色 rgba(51, 51, 51, 0.998)　*/
         font-family: cursive; 
         padding: 2px 17px;
@@ -48,7 +47,7 @@ body {
         background-color: rgba(255, 0, 0, 0.93);   
     }
 }
-    /* スマホ時消す----------------------------------------------------------------------------------- */
+    /* スマホ時消す(PC版)----------------------------------------------------------------------------------- */
     @media screen and (max-width: 650px) {
         .hide-sph {
            display: none;
@@ -118,7 +117,18 @@ body {
     border-radius: 5px;
     margin-top: 2px;
 }
-.menu-btn span,
+
+/* 真ん中横線のデザイン */
+.menu-btn span {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: red;
+    position: absolute;
+}
+/* 上下横線のデザイン */
 .menu-btn span:before,
 .menu-btn span:after {
     content: '';
@@ -126,9 +136,8 @@ body {
     height: 3px;
     width: 25px;
     border-radius: 3px;
-    background-color: rgba(51, 51, 51, 0.998);
+    background-color: rgb(126, 125, 125);
     position: absolute;
-
 }
 .menu-btn span:before {
     bottom: 8px;
@@ -165,7 +174,7 @@ body {
     top: 0;
     left: 100%;/*leftの値を変更してメニューを画面外へ*/
     z-index: 80;
-    background-color: #0a0a0a67;
+    background-color: #a6a6a6a2;
     transition: all 0.5s;/*アニメーション設定*/
 }
 
