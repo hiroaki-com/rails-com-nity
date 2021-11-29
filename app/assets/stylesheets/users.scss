@@ -31,11 +31,11 @@
                 text-align    : center;      /* 文字位置   */
                 cursor        : pointer;     /* カーソル   */
                 padding       : 10px 16px;   /* 余白       */
-                background    : rgb(126, 125, 125);     /* 背景色     */
+                background    : rgba(224, 187, 93, 0.87) ;    /* 背景色     */
                 color         : #ffffff;     /* 文字色     */
                 line-height   : 1em;         /* 1行の高さ  */
                 transition    : .3s;         /* なめらか変化 */                
-                border        : 2px solid rgb(126, 125, 125); ;    /* 枠の指定 */
+                border        : 2px solid rgba(224, 187, 93, 0.87) ;    /* 枠の指定 */
             }
               .button:hover {
                 box-shadow    : none;        /* カーソル時の影消去 */
