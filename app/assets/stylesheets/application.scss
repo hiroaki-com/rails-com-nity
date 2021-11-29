@@ -93,6 +93,13 @@ body {
         }
     }  
 
+    #nav .login {
+        background-color: rgba(255, 0, 0, 0.807);
+    }
+    #nav .logout {
+        background-color: rgba(255, 0, 0, 0.807);
+    }
+
 /* -------------------------------------------------------------------------------------------------  */
 
 /* ハンバーガー　CSS---------------------------------------------------------------------------------- */
@@ -189,8 +196,13 @@ body {
     border-radius: 5px;
 }
 
+/* ログインのリンクのみメニューの下部に表示 */
+.menu-content ul li.ham-login {
+    background-color: rgba(255, 0, 0, 0.786);
+}
+
 /* ログアウトのリンクのみメニューの下部に表示 */
-.menu-content ul li.logout {
+.menu-content ul li.ham-logout {
     margin-top:150px ;
     background-color: rgba(255, 0, 0, 0.786);
     .fa-sign-out-alt {
