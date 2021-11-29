@@ -175,14 +175,14 @@ body {
 }
 
 .menu-content {
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    height: 60%;
     position: fixed;
     top: 0;
     left: 100%;/*leftの値を変更してメニューを画面外へ*/
     z-index: 80;
     background-color: #a6a6a6a2;
-    transition: all 0.5s;/*アニメーション設定*/
+    transition: all 0.8s;/*アニメーション設定*/
 }
 
 .menu-content ul {
@@ -196,14 +196,14 @@ body {
     border-radius: 5px;
 }
 
-/* ログインのリンクのみメニューの下部に表示 */
+/* ログインのリンクのみ色を赤に変更 */
 .menu-content ul li.ham-login {
     background-color: rgba(255, 0, 0, 0.786);
 }
 
 /* ログアウトのリンクのみメニューの下部に表示 */
 .menu-content ul li.ham-logout {
-    margin-top:150px ;
+    margin-top:100px ;
     background-color: rgba(255, 0, 0, 0.786);
     .fa-sign-out-alt {
         color: #fff;
