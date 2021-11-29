@@ -176,7 +176,7 @@ body {
 
 .menu-content {
     width: 70%;
-    height: 60%;
+    height: 100%;
     position: fixed;
     top: 0;
     left: 100%;/*leftの値を変更してメニューを画面外へ*/
@@ -186,7 +186,7 @@ body {
 }
 
 .menu-content ul {
-    padding: 70px 10px 0;
+    padding: 150px 10px 0;
 }
 .menu-content ul li {
     list-style: none;
@@ -203,7 +203,7 @@ body {
 
 /* ログアウトのリンクのみメニューの下部に表示 */
 .menu-content ul li.ham-logout {
-    margin-top:100px ;
+    margin-top:150px ;
     background-color: rgba(255, 0, 0, 0.786);
     .fa-sign-out-alt {
         color: #fff;
