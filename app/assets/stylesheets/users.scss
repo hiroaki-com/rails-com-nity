@@ -67,11 +67,11 @@
             cursor        : pointer;     /* カーソル   */
 
             padding       : 15px 0px;   /* 余白       */
-            background    : rgba(248, 4, 4, 0.752);     /* 背景色     */
+            background    : rgba(255, 0, 0, 0.807);     /* 背景色     */
             color         : rgb(244, 241, 241);     /* 文字色     */
             line-height   : 1em;         /* 1行の高さ  */
             transition    : .3s;         /* なめらか変化 */
-            border        : 1px solid rgba(248, 4, 4, 0.752);    /* 枠の指定 */        
+            border        : 1px solid rgba(255, 0, 0, 0.807);    /* 枠の指定 */        
         }
           .button:hover {
             box-shadow    : none;        /* カーソル時の影消去 */
