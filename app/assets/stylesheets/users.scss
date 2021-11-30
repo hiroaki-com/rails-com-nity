@@ -26,22 +26,21 @@
         max-width: 150px;
             .button {
                 display       : block;
-                border-radius : 5%;          /* 角丸       */
+                border-radius : 3px;          /* 角丸       */
                 font-size     : 11pt;        /* 文字サイズ */
                 text-align    : center;      /* 文字位置   */
                 cursor        : pointer;     /* カーソル   */
                 padding       : 10px 16px;   /* 余白       */
                 color         : #fff;     /* 文字色     */    
                 background    : #980a05e8;     /* 背景色  */
-                
                 line-height   : 1em;         /* 1行の高さ  */
                 transition    : .3s;         /* なめらか変化 */                
-                border        : 2px solid rgba(224, 187, 93, 0.87) ;    /* 枠の指定 */
+                
             }
               .button:hover {
                 color         : #ffffff;     /* 文字色     */            
                 background    : rgba(224, 187, 93, 0.87) ;    /* 背景色     */
-                border : none;
+
             }   
     }
 
