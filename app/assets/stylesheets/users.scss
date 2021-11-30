@@ -34,7 +34,8 @@
                 color         : #fff;     /* 文字色     */    
                 background    : #980a05e8;     /* 背景色  */
                 line-height   : 1em;         /* 1行の高さ  */
-                transition    : .3s;         /* なめらか変化 */                
+                transition    : .3s;         /* なめらか変化 */         
+                border        : none;       
                 
             }
               .button:hover {
