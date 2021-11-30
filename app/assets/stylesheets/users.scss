@@ -24,9 +24,10 @@
     align-items: center;
     justify-content: center;
     max-width: 170px;
+    appearance: none;
         .button {
+            appearance: none;
             -webkit-apperance :none;
-            -moz-apperance :none;
             display       : block;
             border-radius : 5%;          /* 角丸       */
             font-size     : 15px;        /* 文字サイズ */            
