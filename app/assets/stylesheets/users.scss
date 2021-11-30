@@ -32,17 +32,17 @@
             font-size     : 15px;        /* 文字サイズ */            
             text-align    : center;      /* 文字位置   */
             cursor        : pointer;     /* カーソル   */            
-            padding       : 5px 7px;   /* 余白       */
+            padding       : 7px 7px;   /* 余白       */
             color         : rgb(244, 241, 241);     /* 文字色     */ 
             background    : #980a05e8;     /* 背景色     */   
             line-height   : 1em;         /* 1行の高さ  */
             transition    : .3s;         /* なめらか変化 */
-            border        : 1px solid #980a05e8;    /* 枠の指定 */        
+            border        : none;
+                 
         }
           .button:hover {
             box-shadow    : none;        /* カーソル時の影消去 */
-            color         : #980a05e8;    
-            background    : #ffffff;  
+            background    : gold;  
         }   
     }
 }
