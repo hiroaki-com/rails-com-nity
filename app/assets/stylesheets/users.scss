@@ -19,17 +19,17 @@
     }
 
     .actions {
-        margin: 15px auto;
+    margin: 15px auto;
     display: flex;
     align-items: center;
     justify-content: center;
     max-width: 170px;
-    -webkit-apperance :none;
-    -moz-apperance :none;
         .button {
+            -webkit-apperance :none;
+            -moz-apperance :none;
             display       : block;
             border-radius : 5%;          /* 角丸       */
-            font-size     : 17px;        /* 文字サイズ */            
+            font-size     : 15px;        /* 文字サイズ */            
             text-align    : center;      /* 文字位置   */
             cursor        : pointer;     /* カーソル   */            
             padding       : 5px 7px;   /* 余白       */
