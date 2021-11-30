@@ -14,8 +14,14 @@
         -webkit-apperance :none;
         -moz-apperance :none;
     }
+
     .field {
         margin: 10px 0;
+    }
+
+    /* スマホ時にボタンのスタイルが適用されないことへの対応 */
+    input[type="submit"] {
+        -webkit-appearance: none;
     }
 
     .actions {
@@ -24,9 +30,7 @@
     align-items: center;
     justify-content: center;
     max-width: 170px;
-    appearance: none;
-        .button {
-            appearance: none;
+        .button {            
             -webkit-apperance :none;
             display       : block;
             border-radius : 5%;          /* 角丸       */
