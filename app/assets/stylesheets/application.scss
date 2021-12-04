@@ -63,7 +63,7 @@ body {
                     margin-left: 0;
                     font-size: 13px;
                     font-family: none;
-                    padding: 7px 17px;
+                    padding: 5px 15px;
                    }
             }
         }
@@ -119,7 +119,7 @@ body {
     top: 10px;
     right: 10px;
     display: flex;
-    height: 30px;
+    height: 36px;
     width: 40px;
     justify-content: center;
     align-items: center;
@@ -132,8 +132,8 @@ body {
 .menu-btn span {
     content: '';
     display: block;
-    height: 3px;
-    width: 25px;
+    height: 4px;
+    width: 30px;
     border-radius: 3px;
     background-color: #980a05e8;
     position: absolute;
@@ -143,17 +143,17 @@ body {
 .menu-btn span:after {
     content: '';
     display: block;
-    height: 3px;
-    width: 25px;
+    height: 4px;
+    width: 30px;
     border-radius: 3px;
     background-color: rgba(224, 187, 93, 0.87);
     position: absolute;
 }
 .menu-btn span:before {
-    bottom: 8px;
+    bottom: 10px;
 }
 .menu-btn span:after {
-    top: 8px;
+    top: 10px;
 }
 
 
