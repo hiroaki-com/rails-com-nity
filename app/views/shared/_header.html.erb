@@ -14,14 +14,14 @@
             <%= link_to "プロフ", new_profile_path %>
           </li>  
           <li class="logout">
-            <%= link_to(destroy_user_session_path, method: :delete, data: {confirm: "ログアウトしますか？"}) do %><i class="fas fa-sign-out-alt" title="Logout"></i><span class= "hide-sp"> Out</span><% end %>
+            <%= link_to(destroy_user_session_path, method: :delete, data: {confirm: "ログアウトしますか？"}) do %><i class="fas fa-sign-out-alt" title="Logout"></i><span class= "hide-sp"> アウト</span><% end %>
           </li>
         <% else %>
           <li>
             <%= link_to "新規登録", new_user_registration_path %>
           </li>
           <li class="login">
-            <%= link_to(new_user_session_path) do %><i class="fas fa-sign-in-alt" title="Login"></i><span class= "hide-sp"> Login</span><% end %>
+            <%= link_to(new_user_session_path) do %><i class="fas fa-sign-in-alt" title="Login"></i><span class= "hide-sp"> ログイン</span><% end %>
           </li>  
         <% end %>
       </ul>  
