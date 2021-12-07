@@ -260,7 +260,7 @@ footer p {
     font-size: 12px;
 }
 /* #controller-newfooterの各々は下部固定できなかったため特別対応 */
-#sessions-new, #registrations-new, #profiles-new, #posts-new {
+#sessions-new, #registrations-new, #profiles-new, #posts-new  {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -311,4 +311,4 @@ footer p {
 /* ジャンプリンク------------------------------------------------------- */
 .skip-top {
     text-align: center;
-  }
+}

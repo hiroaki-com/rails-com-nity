@@ -1,0 +1,55 @@
+
+<h2>投稿詳細</h2>
+
+<div class="content-wrapper">
+    <div class="content-block smart">
+        <div class="content">
+            <div class="user-about">
+                <div class="image">
+                 <% if @post.user.image.attached? %>
+                  <%= image_tag @post.user.image %>
+                 <% else %>
+                   <%= image_tag "nouser.png"%>
+                 <% end %>
+                </div>
+    
+                <div class="profile">
+                    <div class="name-history">
+                        <div class="name">
+                            <%= @post.id%> : <%= @post.user.name %> <%#  ← post.id はユーザーIDではなく、あくまで、投稿のID %>
+                        </div>
+                        <div class="learning-history">
+                            <%= "学習歴： #{@post.user.learning_history}年" %> 
+                        </div>
+                    </div>
+    
+                    <div class="purpose">
+                      <%= "Rails学習の目的 : #{@post.user.purpose}" %>
+                    </div>  
+                </div> 
+            </div>
+    
+            <div class="text">
+              <p><%= @post.content %></p>
+            </div>
+
+            <%#  画像投稿がある際に出現するエリア %>
+            <% if @post.images.attached? %>
+               <div class="images">
+                 <% @post.images.each do |image| %>
+                   <%= image_tag image %>
+                 <% end %>
+               </div>
+            <% end %>
+
+            <div class="post-times">
+               <%= @post.created_at.strftime('%Y.%m.%d %H:%M')%>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<div>
+    <p class="skip-top"><%= link_to(root_path) do %><i class="fas fa-home icon fa-1x" title="Top"></i><span class= "hide-sp"> Top</span><% end %></p>
+</div>
+

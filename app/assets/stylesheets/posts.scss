@@ -47,3 +47,128 @@
     }
 
 }
+
+
+@media screen and (max-width: 651px) {
+    .smart {
+       display: none;
+    }
+}
+
+/* 投稿詳細画面（#welcome-indexと同様のデザイン）------------------------------- */
+#posts-show{
+    margin-top: 60px; /* header fixed 分の余白 */
+  
+      .content-wrapper {
+          justify-content: space-between;
+          margin: 0 10px 0 10px;        
+          display: -webkit-flex;
+          display: flex;
+  
+         .content-block {
+              border: 2px solid rgba(51, 51, 51, 0.601);
+              border-radius: 5px;         
+              background-color: white;
+              display: block;
+              width: 100%;                       
+              padding: 15px;
+              margin-bottom: 10px;
+
+            .content {               
+              border-radius: 5px;
+              padding: 15px;
+              margin-bottom: 10px;
+            
+            
+            .user-about {
+               display: flex;    
+               /* image,img は最下部に記載 */         
+               .profile {
+                margin-left: 20px;
+  
+                .name-history {
+                  display: flex;
+                  width: 100%;
+                  margin-bottom: 10px;
+                  
+  
+                  .name {
+                    font-weight: bold;
+                    font-size: 0.8em; 
+                  } 
+  
+                 .learning-history {
+                   margin-left: 20px;
+                   font-size: 0.7em; 
+                 }
+                }
+               }
+               .purpose {
+                   width: 100%;  
+                   font-size: 0.7em;      
+               }
+             }
+  
+             .text {
+                font-size: 0.9em;
+                word-wrap: break-word;
+                padding-top: 20px;
+             }
+  
+             .post-times {
+              padding-top: 20%;
+              font-size: 0.6em;
+              text-align: right;
+            }
+  
+             .images {
+                img {
+                  max-width: 30%;
+                  max-height: 100%;
+                  object-fit: cover;
+                  border-radius: 5px;
+                }
+             }
+            }
+         }
+    }
+  }
+  
+
+  /* ユーザー画像をPCとスマホで分岐--------------------------------- */
+  @media screen and (max-width: 650px) {
+    .user-about .image {
+       width: 40px; 
+       height: 40px;             
+         img {
+           width: 40px;
+           height: 40px;
+           object-fit: cover;
+           border-radius: 90px;
+          }              
+   }
+  }
+  @media screen and (min-width: 651px) {
+    .user-about .image {
+       width: 80px; 
+       height: 80px;             
+         img {
+           width: 80px;
+           height: 80px;
+           object-fit: cover;
+           border-radius: 90px;
+          }              
+    }
+  }
+  
+  
+
+  /* -------------------------------投稿詳細画面（#welcome-indexと同様のデザイン） */
+
+
+#posts-show {
+    h2 {
+        text-align: center;
+    }
+}
+
