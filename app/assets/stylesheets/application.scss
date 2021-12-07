@@ -312,3 +312,9 @@ footer p {
 .skip-top {
     text-align: center;
 }
+
+/* 全てのリンクのスラタイルを無効化 */
+a {
+    text-decoration: none;
+    color: black;
+}
