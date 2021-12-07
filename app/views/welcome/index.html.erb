@@ -14,7 +14,7 @@
        <div class="profile">
         <div class="name-history">
          <div class="name">
-          <%= post.user.name %>
+          <%= post.id%> : <%= post.user.name %> <%#  ← post.id はユーザーIDではなく、あくまで、投稿のID %>
          </div>
          <div class="learning-history">
           <%= "学習歴： #{post.user.learning_history}年" %> 
@@ -28,7 +28,8 @@
      </div>
 
      <div class="text">
-       <p><%= post.content %></p>
+       <p><%= link_to(post.content, "/posts/#{post.id}") %></p>　<%#  プロゲート「詳細ページへのリンクを作成しよう」を参考 %>
+       
      </div>
 
      <% if post.images.attached? %>
