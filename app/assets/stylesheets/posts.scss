@@ -108,7 +108,7 @@
                    font-size: 0.7em;      
                }
              }
-  
+             
              .text {
                 font-size: 0.9em;
                 word-wrap: break-word;
@@ -116,9 +116,9 @@
              }
   
              .post-times {
-              padding-top: 20%;
-              font-size: 0.6em;
-              text-align: right;
+                padding-top: 20%;
+                font-size: 0.6em;
+                text-align: right;
             }
   
              .images {
@@ -165,10 +165,14 @@
 
   /* -------------------------------投稿詳細画面（#welcome-indexと同様のデザイン） */
 
-
 #posts-show {
     h2 {
         text-align: center;
     }
 }
 
+/* リンクのスタイルを無効化 */
+a {
+    text-decoration: none;
+    color: black;
+}
