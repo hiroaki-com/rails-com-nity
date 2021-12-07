@@ -57,6 +57,12 @@
            .text {
               font-size: 0.7em;
               word-wrap: break-word;
+              margin: 20px 0;
+              /* 複数行指定の途中で文字省略（＊IE,Fox非対応との噂）https://www.nxworld.net/css-text-truncate.html */
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 2;
+              overflow: hidden;              
            }
 
            .post-times {

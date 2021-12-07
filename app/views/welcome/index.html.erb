@@ -5,9 +5,9 @@
      <div class="user-about">
        <div class="image">
         <% if post.user.image.attached? %>
-         <%= image_tag post.user.image %>
+         <%= link_to image_tag(post.user.image), new_profile_path %> <%#  ← 新規投稿画面から弾かれ、プロフィール編集画面へ遷移 %>
         <% else %>
-          <%= image_tag "nouser.png"%>
+         <%= link_to image_tag("nouser.png"), new_profile_path %>　
         <% end %>
        </div>
       
@@ -27,10 +27,11 @@
       </div> 
      </div>
 
-     <div class="text">
-       <p><%= link_to(post.content, "/posts/#{post.id}") %></p>　<%#  プロゲート「詳細ページへのリンクを作成しよう」を参考 %>
-       
-     </div>
+     <%= link_to("/posts/#{post.id}") do %>
+        <div class="text">
+          <p><%= post.content %></p>　      
+        </div>
+     <% end %>
 
      <% if post.images.attached? %>
         <div class="images">
@@ -44,14 +45,6 @@
         <%= post.created_at.strftime('%Y.%m.%d %H:%M')%>
      </div>
 
-     <div class="action-menu">
-        <div class="like">
-        
-        </div>
-        <div class="coment"> 
-        
-        </div>
-     </div>
     </div>
    <% end %>
   </div>
