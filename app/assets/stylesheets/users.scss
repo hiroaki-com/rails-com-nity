@@ -15,10 +15,10 @@
         margin: 10px 0;
     }
 
-    /* スマホ時にボタンのスタイルが適用されないことへの対応--------------- */
-    input[type="submit"] {
-        -webkit-appearance: none;
-    }
+    /* スマホ時にボタンのスタイルが適用されないことへの対応----> 全体　application.scssへの反映完了----------- */
+    // input[type="submit"] {
+    //     -webkit-appearance: none;
+    // }
     
     .actions {
     margin: 30px auto;
