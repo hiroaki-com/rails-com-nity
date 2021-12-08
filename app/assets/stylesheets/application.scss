@@ -324,3 +324,8 @@ a {
     text-decoration: none;
     color: black;
 }
+
+/* 全てのsubmitタイプに対して、スマホ時の丸角化を無効化 */
+input[type="submit"] {
+    -webkit-appearance: none;
+}
