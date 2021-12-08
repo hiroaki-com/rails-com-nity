@@ -23,18 +23,15 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 15px 0;
-            
-            input[type="submit"] {
-              -webkit-appearance: none;
-            }
+            margin: 35px 0;
+                        
             .button {
                 display       : inline-block;
                 border-radius : 5%;          /* 角丸       */
                 font-size     : 11pt;        /* 文字サイズ */
                 text-align    : center;      /* 文字位置   */
                 cursor        : pointer;     /* カーソル   */
-                padding       : 10px 16px;   /* 余白       */
+                padding       : 10px;   /* 余白       */
                 background    : #333;     /* 背景色     */
                 color         : #ffffff;     /* 文字色     */
                 line-height   : 1em;         /* 1行の高さ  */
@@ -171,10 +168,12 @@
 
   /* -------------------------------投稿詳細画面（#welcome-indexと同様のデザイン） */
 
-#posts-show {
-    h2 {
-        text-align: center;
-    }
+
+
+
+  /* Post 関連の画像投稿のpadding なぜか最初からIDが指定されていた */
+#post_images {
+  padding: 10px 0;
 }
 
 

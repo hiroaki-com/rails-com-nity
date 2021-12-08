@@ -1,12 +1,12 @@
 <div id="header">
 
     <div class="logo">
-      <a href="/">Rails Com◡Nity</a>
+        <a href="/">Rails Com◡Nity</a>
     </div>
     
     <div class="link hide-sph">
       <ul id="nav">
-        <% if user_signed_in? %>
+        <% if user_signed_in? %>          
           <li>
             <%= link_to "投稿 ♪", new_post_path %>
           </li>  
@@ -26,6 +26,8 @@
         <% end %>
       </ul>  
     </div>
+
+    
 
 
     <div class="hamburger-menu hide-pc">
