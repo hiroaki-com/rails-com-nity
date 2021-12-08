@@ -15,8 +15,12 @@
             appearance: none;
             -webkit-apperance :none;
             -moz-apperance :none;
-
         }
+        
+        input[type="submit"] {
+          -webkit-appearance: none;
+        }
+
         .submit-block {
             display: flex;
             align-items: center;
