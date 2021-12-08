@@ -17,15 +17,17 @@
             -moz-apperance :none;
         }
         
-        input[type="submit"] {
-          -webkit-appearance: none;
-        }
+        
 
         .submit-block {
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 15px 0;
+            
+            input[type="submit"] {
+              -webkit-appearance: none;
+            }
             .button {
                 display       : inline-block;
                 border-radius : 5%;          /* 角丸       */
