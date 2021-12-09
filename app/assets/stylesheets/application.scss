@@ -48,7 +48,7 @@ h2 {
             font-size: 15px;
             text-decoration: none; 
             color: #fff;          /* ロゴの文字異色 rgba(51, 51, 51, 0.998)　*/
-            font-family: cursive; 
+            font-family: cursive,Times, serif; 
             padding: 2px 17px;
             margin-left: 10px;
             /* background-color: white;  ロゴの背景色　*/
@@ -75,15 +75,17 @@ h2 {
         list-style: none;
         margin-right: 25px;
         li {
-            width: 90px;
+            width: 85px;
             text-align: center;
             background-color: rgba(51, 51, 51, 0.601);
             background:linear-gradient(rgba(95, 95, 95, 0.937), rgba(100, 100, 100, 0.601));
             display: inline-block;
             border-radius: 3px;
-            padding: 1px;            
+            padding: 1px;
+            margin-left: 3px;            
             a {
                 font-family: Times, serif;
+                font-size: 15px;
                 color: #fff;
                 /* クリック範囲を親要素まで拡大*/
                 display: block;
@@ -143,7 +145,7 @@ h2 {
         font-size: 15px;
         text-decoration: none; 
         color: #fff;          /* ロゴの文字異色 rgba(51, 51, 51, 0.998)　*/
-        font-family: cursive; 
+        font-family: cursive,Times, serif; ; 
         padding: 2px 17px;
         /* background-color: white;  ロゴの背景色　*/
         border-radius: 3px;
@@ -159,8 +161,8 @@ h2 {
         font-size: 17px;
         text-decoration: none; 
         color         : #980a05e8 ; 
-        font-family: cursive; 
-        padding: 1px 5px 0 7px;
+        font-family: 'Times New Roman', Times, serif; 
+        padding: 3px 5px 3px 7px;
         margin-left: 10px;
         /* background-color: white;  ロゴの背景色　*/
         border-radius: 3px;
