@@ -78,11 +78,12 @@ h2 {
             width: 90px;
             text-align: center;
             background-color: rgba(51, 51, 51, 0.601);
-            background:linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.601));
+            background:linear-gradient(rgba(95, 95, 95, 0.937), rgba(100, 100, 100, 0.601));
             display: inline-block;
             border-radius: 3px;
             padding: 1px;            
             a {
+                font-family: Times, serif;
                 color: #fff;
                 /* クリック範囲を親要素まで拡大*/
                 display: block;
@@ -159,7 +160,7 @@ h2 {
         text-decoration: none; 
         color         : #980a05e8 ; 
         font-family: cursive; 
-        padding: 0 5px;
+        padding: 1px 5px 0 7px;
         margin-left: 10px;
         /* background-color: white;  ロゴの背景色　*/
         border-radius: 3px;
@@ -315,7 +316,7 @@ h2 {
 
 
 footer {
-    background:linear-gradient( #980a05dc, #ff4535dd); 
+    background:linear-gradient( #ff4535dd, #980a05dc); 
     text-align: center;
     color: white;
     padding: 10px 0;
