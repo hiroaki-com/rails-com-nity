@@ -2,6 +2,18 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+/* PC時のみ出現させる処理----------------------------------------------- */
+@media screen and (min-width: 651px) {
+    #welcome-index {      
+        .content {
+            border-right: 2px solid  rgba(154, 154, 154, 0.601);
+            border-left: 2px solid  rgba(154, 154, 154, 0.601);
+        }
+    }
+}
+/* -----------------------------------------------PC時のみ出現させる処理 */
+
+
 #welcome-index {
   margin-top: 70px; /* header fixed 分の余白 */
 
@@ -14,15 +26,18 @@
        .content-block {
             border: 0px solid #000;
             border-radius: 5px;         
-            background-color: white;
+            background-color: #f6f6f6;
             display: block;
             width: 100%;                       
         
         .content { 
-          border: 2px solid rgba(51, 51, 51, 0.601);
-          border-radius: 5px;
-          padding: 15px;
-          margin-bottom: 10px;
+            border-top: 2px solid rgba(154, 154, 154, 0.601);
+            // border-right: 1px solid rgba(51, 51, 51, 0.601);
+            // border-bottom: 2px solid rgba(51, 51, 51, 0.601);
+            // border-left: 1px solid rgba(51, 51, 51, 0.601); 
+            padding: 15px;
+            margin-bottom: 10px;
+            background:#fff;
           
           
           .user-about {
@@ -55,6 +70,7 @@
            }
 
            .text {
+              border-top: 1px solid rgba(154, 154, 154, 0.601); // user-about の下部との境界線
               font-size: 0.7em;
               word-wrap: break-word;
               margin: 20px 0;
@@ -83,19 +99,21 @@
        }
 
     .sidebar {
-        border: 1px solid #000;
-        border-radius: 5px;
-        width: auto;
-        padding: 20px;
-        background-color: white;
-        margin: 0 15px 0 5%; 
+          border-top: 2px solid rgba(154, 154, 154, 0.601);
+          border-right: 2px solid rgba(154, 154, 154, 0.601);
+          // border-bottom: 2px solid rgba(154, 154, 154, 0.601);
+          border-left: 2px solid rgba(154, 154, 154, 0.601);          
+          width: auto;
+          padding: 20px;
+          background-color: white;
+          margin: 0 15px 0 5%; 
 
         .sidebar__item {
           margin-top: 50px;
         }
 
          .box {            
-              border: 1px solid #000;
+              border: 1px solid rgba(154, 154, 154, 0.601);
               width: 100px;
               height: 100px;
               margin: 10px auto;

@@ -50,25 +50,36 @@
 }
 
 
-@media screen and (max-width: 651px) {
-    .smart {
-       display: none;
-    }
+/* 投稿詳細画面（#welcome-indexと同様のデザイン）------------------------------- */
+
+/* PC時のみ出現させる処理---------------------- */
+@media screen and (min-width: 651px) {
+  .content-wrapper {
+      margin: 0 10%;    
+  }
+  .content-block {
+      border-top: 2px solid rgba(154, 154, 154, 0.601);
+      border-right: 2px solid rgba(154, 154, 154, 0.601);
+      border-bottom: 2px solid rgba(154, 154, 154, 0.601);
+      border-left: 2px solid rgba(154, 154, 154, 0.601); 
+  }
 }
 
-/* 投稿詳細画面（#welcome-indexと同様のデザイン）------------------------------- */
-#posts-show{
+
+#posts-show {
     margin-top: 70px; /* header fixed 分の余白 */
-  
+    
       .content-wrapper {
           justify-content: space-between;
-          margin: 0 10px 0 10px;        
+          // margin: 0 10%;  /+ スマホ時に左右余白無くすため */   
           display: -webkit-flex;
           display: flex;
   
          .content-block {
-              border: 2px solid rgba(51, 51, 51, 0.601);
-              border-radius: 5px;         
+              // border-top: 2px solid rgba(51, 51, 51, 0.601);
+              // border-right: 1px solid rgba(51, 51, 51, 0.601);
+              // border-bottom: 2px solid rgba(51, 51, 51, 0.601);
+              // border-left: 1px solid rgba(51, 51, 51, 0.601);                       
               background-color: white;
               display: block;
               width: 100%;                       
