@@ -1,5 +1,5 @@
 #registrations-new, #sessions-new {
-    margin-top: 80px; /* header fixed 分の余白 */
+    margin-top: 70px; /* header fixed 分の余白 */
 
      input[type="email"],input[type="password"] {
         width :100%;
@@ -35,11 +35,10 @@
             cursor        : pointer;     /* カーソル   */            
             padding       : 7px 7px;   /* 余白       */
             color         : rgb(244, 241, 241);     /* 文字色     */ 
-            background    : #980a05e8;     /* 背景色     */   
+            background:linear-gradient( #980a05dc, #ff4535dd);   
             line-height   : 1em;         /* 1行の高さ  */
             transition    : .3s;         /* なめらか変化 */
             border        : 4px solid  rgba(224, 187, 93, 0.87) ;
-                 
         }
           .button:hover {
             box-shadow    : none;        /* カーソル時の影消去 */

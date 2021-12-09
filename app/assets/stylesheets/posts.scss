@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #posts-new, #posts-edit, #posts-create, #posts-update {
-    margin-top: 80px; /* header fixed 分の余白 cf.application.scss */
+    margin-top: 70px; /* header fixed 分の余白 cf.application.scss */
     
     form {
         textarea {
@@ -16,8 +16,6 @@
             -webkit-apperance :none;
             -moz-apperance :none;
         }
-        
-        
 
         .submit-block {
             display: flex;
@@ -26,23 +24,23 @@
             margin: 35px 0;
                         
             .button {
-                display       : inline-block;
-                border-radius : 5%;          /* 角丸       */
-                font-size     : 11pt;        /* 文字サイズ */
-                text-align    : center;      /* 文字位置   */
-                cursor        : pointer;     /* カーソル   */
-                padding       : 10px;   /* 余白       */
-                background    : #333;     /* 背景色     */
-                color         : #ffffff;     /* 文字色     */
-                line-height   : 1em;         /* 1行の高さ  */
-                transition    : .3s;         /* なめらか変化 */
-                box-shadow    : 4px 4px 4px #666666;  /* 影の設定 */
-                border        : 2px solid #333;    /* 枠の指定 */
-            }
-              .button:hover {
-                box-shadow    : none;        /* カーソル時の影消去 */
-                color         : #333;     /* 背景色     */
-                background    : #ffffff;     /* 文字色     */
+              display       : inline-block;
+              border-radius : 5%;          /* 角丸       */
+              font-size     : 11pt;        /* 文字サイズ */
+              text-align    : center;      /* 文字位置   */
+              cursor        : pointer;     /* カーソル   */
+              padding       : 10px;   /* 余白       */
+              background:linear-gradient( #980a05dc, #ff4535dd);
+              color         : #ffffff;     /* 文字色     */
+              line-height   : 1em;         /* 1行の高さ  */
+              transition    : .3s;         /* なめらか変化 */
+              box-shadow    : 4px 4px 4px #666666;  /* 影の設定 */
+              border        : 0px solid #980a05da;    /* 枠の指定 */
+          }
+            .button:hover {
+              box-shadow    : none;        /* カーソル時の影消去 */
+              color         : #980a05da;     /* 背景色     */
+              background    : #ffffff;     /* 文字色     */
             }
         }
 
@@ -60,7 +58,7 @@
 
 /* 投稿詳細画面（#welcome-indexと同様のデザイン）------------------------------- */
 #posts-show{
-    margin-top: 80px; /* header fixed 分の余白 */
+    margin-top: 70px; /* header fixed 分の余白 */
   
       .content-wrapper {
           justify-content: space-between;
