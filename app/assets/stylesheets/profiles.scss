@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #profiles-new, #profiles-edit, #profiles-create, #profiles-update {
-    margin-top: 80px; /* header fixed 分の余白 */
+    margin-top: 70px; /* header fixed 分の余白 */
     
     form {
         .form-group {
@@ -42,16 +42,16 @@
                 text-align    : center;      /* 文字位置   */
                 cursor        : pointer;     /* カーソル   */
                 padding       : 10px;   /* 余白       */
-                background    : #333;     /* 背景色     */
+                background:linear-gradient( #980a05dc, #ff4535dd); 
                 color         : #ffffff;     /* 文字色     */
                 line-height   : 1em;         /* 1行の高さ  */
                 transition    : .3s;         /* なめらか変化 */
                 box-shadow    : 4px 4px 4px #666666;  /* 影の設定 */
-                border        : 2px solid #333;    /* 枠の指定 */
+                border        : 0px solid #980a05da;    /* 枠の指定 */
             }
               .button:hover {
                 box-shadow    : none;        /* カーソル時の影消去 */
-                color         : #333;     /* 背景色     */
+                color         : #980a05da;     /* 背景色     */
                 background    : #ffffff;     /* 文字色     */
             }
         }        
