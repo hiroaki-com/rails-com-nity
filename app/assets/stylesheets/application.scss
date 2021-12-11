@@ -130,7 +130,7 @@ h2 {
         justify-content: space-between;
         padding: 0;
         height: 70px;
-        background: linear-gradient(rgba(251, 185, 185, 0.745) 75%, rgba(255, 255, 255, 0) 30%); /* 上下で線形グラデーションをかけ、下部を透明にすることで配置編集を簡易化 */
+        background: linear-gradient( rgba(253, 253, 253, 0.855) 75%, rgba(255, 255, 255, 0) 30%); /* 上下で線形グラデーションをかけ、下部を透明にすることで配置編集を簡易化 */
         /* ヘッダー固定作業 cf.posts.css */
         position: fixed;
         z-index: 999;
@@ -262,13 +262,13 @@ h2 {
 
 
 .menu-content ul {
-    padding: 180px 10px 0;
+    padding: 100px 10px 0; /* メニューの上からの位置調整 */
 }
 .menu-content ul li {
     list-style: none;
     background-color: rgba(0, 0, 0, 0.553);
     padding-left: 10px;
-    margin-bottom: 20px; /* メニュー同士の感覚 */
+    margin-bottom: 25px; /* メニュー同士の感覚 */
     border-radius: 5px;
 }
 
@@ -279,7 +279,7 @@ h2 {
 
 /* ログアウトのリンクのみメニューの下部に表示 */
 .menu-content ul li.ham-logout {
-    margin-top:100px ;
+    margin-top:100px ;            /* その他のリンクからの距離 */
     background-color: #980a05da;
     .fa-sign-out-alt {
         color: #fff;
