@@ -186,3 +186,16 @@
 }
 
 
+/* 投稿更新・投稿削除 ボタン-------------------------------------- */
+
+.update-destroy-btn {
+  display: flex;
+  margin: 5px 0 0;  
+  padding-left: 5px;
+  font-size: 15px;
+  list-style-type: none; 
+  li {
+    margin: none; 
+    padding-right: 20px;
+  }
+}

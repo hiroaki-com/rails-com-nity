@@ -39,7 +39,7 @@ class PostsController < ApplicationController
     end
 
     def destroy
-        if @post.dastroy
+        if @post.destroy
             redirect_to root_path, notice: "投稿を削除しました。"
         else
             redirect_to root_path, alert: "投稿を削除できませんでした。"
