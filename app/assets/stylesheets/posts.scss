@@ -65,7 +65,7 @@
   }
 }
 
-
+/* 投稿詳細画面------------------------------------------------------------------- */
 #posts-show {
     margin-top: 70px; /* header fixed 分の余白 */
     
@@ -85,11 +85,12 @@
               width: 100%;                       
               padding: 15px;
               margin-bottom: 10px;
+              border-radius: 5px;
 
             .content {               
               border-radius: 5px;
-              padding: 15px;
               margin-bottom: 10px;
+              border-radius: 5px;
               
             
             .user-about {
@@ -97,6 +98,7 @@
                /* image,img は最下部に記載 */ 
                padding: 10px;             
                background-color: rgba(185, 185, 185, 0.402);
+               border-radius: 5px;
 
                .profile {
                    margin-left: 20px;                  
@@ -130,12 +132,16 @@
              .text {
                 font-size: 0.9em;
                 word-wrap: break-word;
-                padding-top: 20px;
+                
+                p {
+                  margin: 30px 15px 15px 10px ;
+                }     
              }
   
              .post-times {
                 padding-top: 20%;
                 font-size: 0.8em;
+                margin-right: 10px;
                 text-align: right;
             }
             
@@ -171,8 +177,10 @@
   padding-left: 5px;
   font-size: 15px;
   list-style-type: none; 
+  
   li {
     margin: none; 
     padding-right: 20px;
+    
   }
 }

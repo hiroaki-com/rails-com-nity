@@ -75,14 +75,15 @@ h2 {
     #nav {
         list-style: none;
         margin-right: 25px;
+        
         li {
             width: 85px;
             text-align: center;
             background-color: rgba(51, 51, 51, 0.601);
+            border: 2px solid  rgba(224, 187, 93, 0.87) ;
             background:linear-gradient( 90deg,rgba(69, 69, 69, 0.868), rgba(100, 100, 100, 0.601));
             display: inline-block;
-            border-radius: 3px;
-            padding: 1px;
+            border-radius: 5px;
             margin-left: 3px;            
             a {
                 font-family: Times, serif;
@@ -92,7 +93,7 @@ h2 {
                 display: block;
                 transition    : .1s;         /* なめらか変化 */
                 border        : 0px solid #333;    /* 枠の指定 0で実質無し*/
-                border-radius: 3px;                    
+                border-radius: 5px;                    
             }
 
             /* ホバー------------------------------------------------------- */
