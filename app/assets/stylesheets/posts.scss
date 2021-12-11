@@ -90,13 +90,13 @@
               border-radius: 5px;
               padding: 15px;
               margin-bottom: 10px;
-            
+              
             
             .user-about {
                display: flex;    
                /* image,img は最下部に記載 */ 
-               padding-bottom: 15px;
-               border-bottom: 1px solid rgba(154, 154, 154, 0.601); // user-about の下部との境界線  
+               padding: 10px;             
+               background-color: rgba(185, 185, 185, 0.402);
 
                .profile {
                    margin-left: 20px;                  

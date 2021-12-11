@@ -6,8 +6,10 @@
 @media screen and (min-width: 651px) {
     #welcome-index {      
         .content {
+            border-top: 2px solid rgba(154, 154, 154, 0.601);
             border-right: 2px solid  rgba(154, 154, 154, 0.601);
             border-left: 2px solid  rgba(154, 154, 154, 0.601);
+            border-bottom: 2px solid  rgba(154, 154, 154, 0.601);
         }
     }
 }
@@ -28,10 +30,9 @@
             border-radius: 5px;         
             background-color: #f6f6f6;
             display: block;
-            width: 100%;                       
-        
+          
         .content { 
-            border-top: 2px solid rgba(154, 154, 154, 0.601);
+            // border-top: 2px solid rgba(154, 154, 154, 0.601);
             // border-right: 1px solid rgba(51, 51, 51, 0.601);
             // border-bottom: 2px solid rgba(51, 51, 51, 0.601);
             // border-left: 1px solid rgba(51, 51, 51, 0.601); 
@@ -43,8 +44,9 @@
           .user-about {
               display: flex;    
               /* image,img は最下部に記載 */  
-              padding-bottom: 10px;
-              border-bottom: 1px solid rgba(154, 154, 154, 0.601); // user-about の下部との境界線
+              padding: 10px;
+              // border-bottom: 1px solid rgba(154, 154, 154, 0.601); // user-about の下部との境界線
+              background-color: rgba(185, 185, 185, 0.402);
 
              .profile {
                 margin-left: 20px;
@@ -115,11 +117,12 @@
         }
 
          .box {            
-              border: 1px solid rgba(154, 154, 154, 0.601);
+              // border: 1px solid rgba(154, 154, 154, 0.601);
+              background-color: rgba(185, 185, 185, 0.402);
               width: 100px;
               height: 100px;
               margin: 10px auto;
-              border-radius: 5px;
+              // border-radius: 5px;
               /* 子要素<p>に対して上下左右中央寄せ */
               display: flex;
               align-items: center;
