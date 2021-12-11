@@ -181,6 +181,18 @@
   li {
     margin: none; 
     padding-right: 20px;
-    
+  }
+
+  // ゲスト用のコメント部分（不要なら要削除）
+  .guest-comment {
+    font-size: 14px;
+  }
+
+  a {
+    font-size: 15px;
+    color:#080033;
+    border        : 1px solid #080033;  
+    border-radius: 3px;
+    padding: 3px 5px;
   }
 }
