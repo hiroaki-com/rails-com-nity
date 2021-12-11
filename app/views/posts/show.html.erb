@@ -52,8 +52,9 @@
                     <%= link_to '編集', edit_post_path, data: {"turbolinks" => false} %> 
                 </li>
                 <li>
-                    <%= link_to '削除', post_path, method: :delete, data: { confirm: '削除してもよろしいですか?' } %> ( ゲスト用に非投稿者の投稿ですが表示 )
+                    <%= link_to '削除', post_path, method: :delete, data: { confirm: '削除してもよろしいですか?' } %> 
                 </li>
+                <li class="guest-comment">← ※ゲスト用にボタン表示中</li>
             </ul>
             
         </div>
