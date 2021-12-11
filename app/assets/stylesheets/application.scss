@@ -32,7 +32,7 @@ h2 {
         justify-content: space-between;
         padding: 0;
         height: 80px;
-        background: linear-gradient(rgba(255, 255, 255, 0.793) 75%, rgba(255, 255, 255, 0) 30%); /* 上下で線形グラデーションをかけ、下部を透明にすることで配置編集を簡易化 */
+        background: linear-gradient( rgba(253, 253, 253, 0.855) 75%, rgba(255, 255, 255, 0) 30%); /* 上下で線形グラデーションをかけ、下部を透明にすることで配置編集を簡易化 */
         /* ヘッダー固定作業 cf.posts.css */
         position: fixed;
         z-index: 999;
@@ -79,7 +79,7 @@ h2 {
             width: 85px;
             text-align: center;
             background-color: rgba(51, 51, 51, 0.601);
-            background:linear-gradient(rgba(95, 95, 95, 0.937), rgba(100, 100, 100, 0.601));
+            background:linear-gradient( 90deg,rgba(69, 69, 69, 0.868), rgba(100, 100, 100, 0.601));
             display: inline-block;
             border-radius: 3px;
             padding: 1px;
@@ -105,10 +105,10 @@ h2 {
     }  
 
     #nav .login {
-        background:linear-gradient( #980a05dc, #ff4535dd);  /* erb側のローマ字とひらがなの関係で良きせぬ文字サイズボケが発生（erb側で対応済み） */ 
+        background:linear-gradient( 90deg, #980a05dc, #ff4535dd);  /* erb側のローマ字とひらがなの関係で良きせぬ文字サイズボケが発生（erb側で対応済み） */ 
     }
     #nav .logout {
-        background:linear-gradient( #980a05dc, #ff4535dd);   /* erb側のローマ字とひらがなの関係で良きせぬ文字サイズボケが発生（erb側で対応済み） */
+        background:linear-gradient( 90deg, #980a05dc, #ff4535dd);   /* erb側のローマ字とひらがなの関係で良きせぬ文字サイズボケが発生（erb側で対応済み） */
     }
 
 /* -------------------------------------------------------------------------------------------------  */
@@ -130,7 +130,7 @@ h2 {
         justify-content: space-between;
         padding: 0;
         height: 70px;
-        background: linear-gradient(rgba(255, 255, 255, 0.793) 75%, rgba(255, 255, 255, 0) 30%); /* 上下で線形グラデーションをかけ、下部を透明にすることで配置編集を簡易化 */
+        background: linear-gradient(rgba(251, 185, 185, 0.745) 75%, rgba(255, 255, 255, 0) 30%); /* 上下で線形グラデーションをかけ、下部を透明にすることで配置編集を簡易化 */
         /* ヘッダー固定作業 cf.posts.css */
         position: fixed;
         z-index: 999;
@@ -320,7 +320,6 @@ h2 {
 
 /* フッター----------------------------------------------------------------- */
 
-
 footer {
     background:linear-gradient( #ff4535dd, #980a05dc); 
     text-align: center;
@@ -334,7 +333,7 @@ footer p {
     font-size: 12px;
 }
 /* #controller-newfooterの各々は下部固定できなかったため特別対応 */
-#sessions-new, #registrations-new, #profiles-new, #posts-new  {
+#sessions-new, #registrations-new, #profiles-new, #posts-new, #posts-show, #profiles-edit  {
     display: flex;
     flex-direction: column;
     min-height: 100vh;

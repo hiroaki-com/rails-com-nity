@@ -7,7 +7,7 @@
         <% if post.user.image.attached? %>
          <%= link_to image_tag(post.user.image), new_profile_path %> <%#  ← 新規投稿画面から弾かれ、プロフィール編集画面へ遷移 %>
         <% else %>
-         <%= link_to image_tag("nouser.png"), new_profile_path %>　
+         <%= link_to image_tag("nouser.png"), new_profile_path %> 
         <% end %>
        </div>
       
@@ -17,7 +17,7 @@
           <%= post.id%> : <%= post.user.name %> <%#  ← post.id はユーザーIDではなく、あくまで、投稿のID %>
          </div>
          <div class="learning-history">
-          <%= "学習歴： #{post.user.learning_history}年" %> 
+          <%= "学習歴 : #{post.user.learning_history}年" %> 
          </div>
        </div>
        <div class="purpose">
@@ -29,7 +29,7 @@
 
      <%= link_to("/posts/#{post.id}") do %>
         <div class="text">
-          <p><%= post.content %></p>　      
+          <p><%= post.content %></p>   
         </div>
      <% end %>
 
@@ -42,7 +42,7 @@
      <% end %>
 
      <div class="post-times">
-        <%= post.created_at.strftime('%Y.%m.%d %H:%M')%>
+        <%= post.created_at.strftime('%Y.%m.%d - %H : %M')%>
      </div>
 
     </div>

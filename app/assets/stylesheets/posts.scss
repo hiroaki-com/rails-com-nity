@@ -94,14 +94,20 @@
             
             .user-about {
                display: flex;    
-               /* image,img は最下部に記載 */         
+               /* image,img は最下部に記載 */ 
+               padding-bottom: 15px;
+               border-bottom: 1px solid rgba(154, 154, 154, 0.601); // user-about の下部との境界線  
+
                .profile {
-                margin-left: 20px;
+                   margin-left: 20px;                  
+                   display: grid;
+                   place-items: center; /* IE非対応（大勢に影響ないため有効） */
+                   
   
                 .name-history {
-                  display: flex;
-                  width: 100%;
-                  margin-bottom: 10px;
+                    display: flex;
+                    width: 100%;
+                    
                   
   
                   .name {
@@ -129,57 +135,28 @@
   
              .post-times {
                 padding-top: 20%;
-                font-size: 0.6em;
+                font-size: 0.8em;
                 text-align: right;
             }
-  
-             .images {
-                img {
-                  max-width: 30%;
-                  max-height: 100%;
-                  object-fit: cover;
-                  border-radius: 5px;
-                }
-             }
+            
+            /* 当該写真は投稿写真！ */
+              .images {
+                 img {
+                   max-width: 30%;
+                   max-height: 100%;
+                   object-fit: cover;
+                   border-radius: 5px;
+                 }
+              }
             }
          }
     }
   }
   
 
-  /* ユーザー画像をPCとスマホで分岐--------------------------------- */
-  @media screen and (max-width: 650px) {
-    .user-about .image {
-       width: 40px; 
-       height: 40px;             
-         img {
-           width: 40px;
-           height: 40px;
-           object-fit: cover;
-           border-radius: 90px;
-          }              
-   }
-  }
-  @media screen and (min-width: 651px) {
-    .user-about .image {
-       width: 80px; 
-       height: 65px;             
-         img {
-           width: 80px;
-           height: 65px;
-           object-fit: cover;
-           border-radius: 90px;
-          }              
-    }
-  }
-  
-  
-
   /* -------------------------------投稿詳細画面（#welcome-indexと同様のデザイン） */
 
-
-
-
+  /* img のサイズに関しては、ウェルカムに記載 */
   /* Post 関連の画像投稿のpadding なぜか最初からIDが指定されていた */
 #post_images {
   padding: 10px 0;

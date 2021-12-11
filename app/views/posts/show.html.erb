@@ -19,7 +19,7 @@
                             <%= @post.id%> : <%= @post.user.name %> <%#  ← post.id はユーザーIDではなく、あくまで、投稿のID %>
                         </div>
                         <div class="learning-history">
-                            <%= "学習歴： #{@post.user.learning_history}年" %> 
+                            <%= "学習歴 : #{@post.user.learning_history}年" %> 
                         </div>
                     </div>
     
@@ -43,20 +43,19 @@
             <% end %>
 
             <div class="post-times">
-               <%= @post.created_at.strftime('%Y.%m.%d %H:%M')%>
+               <%= @post.created_at.strftime('%Y.%m.%d - %H : %M')%>
             </div>
             
-            <% if @post.user == current_user %>
+            <%#  ゲスト用に右記載はコメントアウト<% if @post.user ==  current_user %> 
             <ul class="update-destroy-btn">
                 <li>
                     <%= link_to '編集', edit_post_path, data: {"turbolinks" => false} %> 
                 </li>
                 <li>
-                    <%= link_to '削除', post_path, method: :delete, data: { confirm: '本当にいいですか?' } %>
+                    <%= link_to '削除', post_path, method: :delete, data: { confirm: '削除してもよろしいですか?' } %>
                 </li>
             </ul>
-            <% end %>
-
+            
         </div>
     </div>
     

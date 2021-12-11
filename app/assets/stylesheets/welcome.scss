@@ -35,22 +35,26 @@
             // border-right: 1px solid rgba(51, 51, 51, 0.601);
             // border-bottom: 2px solid rgba(51, 51, 51, 0.601);
             // border-left: 1px solid rgba(51, 51, 51, 0.601); 
-            padding: 15px;
+            padding: 10px;
             margin-bottom: 10px;
             background:#fff;
           
           
           .user-about {
-             display: flex;    
-             /* image,img は最下部に記載 */         
+              display: flex;    
+              /* image,img は最下部に記載 */  
+              padding-bottom: 10px;
+              border-bottom: 1px solid rgba(154, 154, 154, 0.601); // user-about の下部との境界線
+
              .profile {
-              margin-left: 20px;
+                margin-left: 20px;
+                display: grid;
+                place-items: center; /* IE非対応（大勢に影響ないため有効） */
 
               .name-history {
-                display: flex;
-                width: 100%;
-                margin-bottom: 10px;
-                
+                 display: flex;
+                 width: 100%;
+                                
 
                 .name {
                   font-weight: bold;
@@ -69,22 +73,20 @@
              }
            }
 
-           .text {
-              border-top: 1px solid rgba(154, 154, 154, 0.601); // user-about の下部との境界線
+           .text {  
               font-size: 0.7em;
               word-wrap: break-word;
-              margin: 20px 0;
               /* 複数行指定の途中で文字省略（＊IE,Fox非対応との噂）https://www.nxworld.net/css-text-truncate.html */
               display: -webkit-box;
               -webkit-box-orient: vertical;
-              -webkit-line-clamp: 2;
+              -webkit-line-clamp: 3;
               overflow: hidden;              
            }
 
            .post-times {
-            font-size: 0.6em;
-            margin-top: 5px;
-            text-align: right;
+              font-size: 0.6em;
+              margin-top: 10px;
+              text-align: right;
           }
 
            .images {
@@ -135,7 +137,7 @@
 }
 
 
-
+/* プロフィール画像 posts.scss にも反映 --------------------------*/
 /* ユーザー画像をPCとスマホで分岐--------------------------------- */
 @media screen and (max-width: 650px) {
   .user-about .image {
@@ -151,11 +153,11 @@
 }
 @media screen and (min-width: 651px) {
   .user-about .image {
-     width: 80px; 
-     height: 65px;             
+     width: 75px; 
+     height: 75px;             
        img {
-         width: 80px;
-         height: 65px;
+         width: 75px;
+         height: 75px;
          object-fit: cover;
          border-radius: 90px;
         }              
