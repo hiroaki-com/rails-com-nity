@@ -185,13 +185,14 @@
 
   // ゲスト用のコメント部分（不要なら要削除）
   .guest-comment {
-    font-size: 14px;
+    color: #99999b;
+    font-size: 12px;
   }
 
   a {
     font-size: 15px;
-    color:#080033;
-    border        : 1px solid #080033;  
+    color: #99999b;
+    border        : 1px solid #99999b;  
     border-radius: 3px;
     padding: 3px 5px;
   }
