@@ -27,12 +27,11 @@
       </div> 
      </div>
 
-     <%= link_to("/posts/#{post.id}") do %>
+  <%= link_to("/posts/#{post.id}") do %>
         <div class="text">
           <p><%= post.content %></p>   
         </div>
      <% end %>
-
      <% if post.images.attached? %>
         <div class="images">
           <% post.images.each do |image| %>
@@ -41,13 +40,16 @@
         </div>
      <% end %>
 
-     <div class="post-times">
-        <%= post.created_at.strftime('%Y.%m.%d - %H : %M')%>
+        <div class="post-times">
+           <%= post.created_at.strftime('%Y.%m.%d_%H : %M')%>
+        </div>
      </div>
 
-    </div>
-   <% end %>
+  <% end %>
+
   </div>
+  
+  
   
 
   <div class="sidebar">
@@ -67,6 +69,5 @@
 <div>
    <p class="skip-top"><%= link_to(root_path) do %><i class="fas fa-home icon fa-1x" title="Top"></i><span class= "hide-sp"> Top</span><% end %></p>
 </div>
-
 
 

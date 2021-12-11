@@ -30,6 +30,8 @@
             border-radius: 5px;         
             background-color: #f6f6f6;
             display: block;
+            border-radius: 5px;
+            
           
         .content { 
             // border-top: 2px solid rgba(154, 154, 154, 0.601);
@@ -39,6 +41,7 @@
             padding: 10px;
             margin-bottom: 10px;
             background:#fff;
+            border-radius: 5px;
           
           
           .user-about {
@@ -47,6 +50,7 @@
               padding: 10px;
               // border-bottom: 1px solid rgba(154, 154, 154, 0.601); // user-about の下部との境界線
               background-color: rgba(185, 185, 185, 0.402);
+              border-radius: 5px;
 
              .profile {
                 margin-left: 20px;
@@ -76,18 +80,23 @@
            }
 
            .text {  
+              
               font-size: 0.7em;
               word-wrap: break-word;
               /* 複数行指定の途中で文字省略（＊IE,Fox非対応との噂）https://www.nxworld.net/css-text-truncate.html */
               display: -webkit-box;
               -webkit-box-orient: vertical;
               -webkit-line-clamp: 3;
-              overflow: hidden;              
+              overflow: hidden;
+              p {
+                margin: 15px 15px 15px 5px ;
+              }              
            }
 
            .post-times {
               font-size: 0.6em;
               margin-top: 10px;
+              margin-right: 5px;
               text-align: right;
           }
 
@@ -111,6 +120,7 @@
           padding: 20px;
           background-color: white;
           margin: 0 15px 0 5%; 
+          border-radius: 5px;
 
         .sidebar__item {
           margin-top: 50px;
@@ -119,14 +129,16 @@
          .box {            
               // border: 1px solid rgba(154, 154, 154, 0.601);
               background-color: rgba(185, 185, 185, 0.402);
-              width: 100px;
+              width: 150px;
               height: 100px;
               margin: 10px auto;
-              // border-radius: 5px;
+              border-radius: 5px;
+
               /* 子要素<p>に対して上下左右中央寄せ */
               display: flex;
               align-items: center;
               justify-content: center;
+              
          }
     }        
   }
