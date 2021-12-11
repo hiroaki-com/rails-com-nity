@@ -130,7 +130,7 @@
 .sidebar__item--fixed {
   position: sticky;
   margin-bottom: 0;
-  top: 10px;
+  top: 150px; /* 固定する位置（上部からの距離） */
   z-index: 1;
 }
 
@@ -152,10 +152,10 @@
 @media screen and (min-width: 651px) {
   .user-about .image {
      width: 80px; 
-     height: 80px;             
+     height: 65px;             
        img {
          width: 80px;
-         height: 80px;
+         height: 65px;
          object-fit: cover;
          border-radius: 90px;
         }              
