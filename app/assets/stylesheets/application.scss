@@ -334,7 +334,7 @@ footer p {
     font-size: 12px;
 }
 /* #controller-newfooterの各々は下部固定できなかったため特別対応 */
-#sessions-new, #registrations-new, #profiles-new, #posts-new, #posts-show, #profiles-edit  {
+#sessions-new, #registrations-new, #profiles-new, #posts-new, #posts-show, #posts-edit, #profiles-edit  {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
