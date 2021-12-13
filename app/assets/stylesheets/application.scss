@@ -50,8 +50,8 @@ h2 {
             text-decoration: none; 
             color: #fff;          /* ロゴの文字異色 rgba(51, 51, 51, 0.998)　*/
             font-family: cursive,Times, serif; 
-            padding: 2px 17px;
-            margin-left: 10px;
+            padding: 2px 17px; 
+            margin-left: 35px; 
             /* background-color: white;  ロゴの背景色　*/
             border-radius: 3px;
             background:linear-gradient( #980a05dc, #ff4535dd);
@@ -74,7 +74,7 @@ h2 {
     /* ナブ(PC版に反映)------------------------------------------------------------------------------- */
     #nav {
         list-style: none;
-        margin-right: 25px;
+        margin-right: 30px;
         
         li {
             width: 85px;
