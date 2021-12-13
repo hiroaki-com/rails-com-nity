@@ -18,6 +18,7 @@
 
 #welcome-index {
   margin-top: 70px; /* header fixed 分の余白 */
+  
 
     .content-wrapper {
         // justify-content: space-between; 　// コンテントとサイドバーの空白を消すために無効化
@@ -25,8 +26,8 @@
         display: -webkit-flex;
         display: flex;
         @media screen and (min-width: 651px) { //PCサイズの時のみ両横の余白を出現
-          margin-right: 25px;
-          margin-left: 10px;
+          margin-right: 5%;
+          margin-left: 5%;
       }
 
        .content-block {
@@ -35,7 +36,7 @@
             background-color: #f6f6f6;
             display: block;
             border-radius: 5px;
-            width: 700px;
+            width: 600px;
             
           
         .content { 
@@ -130,7 +131,7 @@
           width: auto;
           padding: 20px;
           background-color: white;
-          margin: 0 0 0 15px;
+          margin: 0 0 0 3%;
           border-radius: 5px;
 
         .sidebar__item {
