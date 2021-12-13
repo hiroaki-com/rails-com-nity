@@ -20,10 +20,14 @@
   margin-top: 70px; /* header fixed 分の余白 */
 
     .content-wrapper {
-        justify-content: space-between;
-        margin: 0 10px 0 10px;        
+        // justify-content: space-between; 　// コンテントとサイドバーの空白を消すために無効化
+        margin: 0 ;        
         display: -webkit-flex;
         display: flex;
+        @media screen and (min-width: 651px) { //PCサイズの時のみ両横の余白を出現
+          margin-right: 25px;
+          margin-left: 10px;
+      }
 
        .content-block {
             border: 0px solid #000;
@@ -31,6 +35,7 @@
             background-color: #f6f6f6;
             display: block;
             border-radius: 5px;
+            width: 700px;
             
           
         .content { 
@@ -38,8 +43,11 @@
             // border-right: 1px solid rgba(51, 51, 51, 0.601);
             // border-bottom: 2px solid rgba(51, 51, 51, 0.601);
             // border-left: 1px solid rgba(51, 51, 51, 0.601); 
-            padding: 10px;
-            margin-bottom: 10px;
+            @media screen and (min-width: 651px) { //PCサイズの時のみ両横/下の余白を出現
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+            
             background:#fff;
             border-radius: 5px;
           
@@ -50,7 +58,9 @@
               padding: 10px;
               // border-bottom: 1px solid rgba(154, 154, 154, 0.601); // user-about の下部との境界線
               background-color: rgba(185, 185, 185, 0.402);
-              border-radius: 5px;
+              @media screen and (min-width: 651px) { //PCサイズの時のみ出現
+                  border-radius: 5px;
+              }
 
              .profile {
                 margin-left: 20px;
@@ -96,7 +106,8 @@
            .post-times {
               font-size: 0.6em;
               margin-top: 10px;
-              margin-right: 5px;
+              margin-right: 10px;
+              padding-bottom: 5px;
               text-align: right;
           }
 
@@ -119,7 +130,7 @@
           width: auto;
           padding: 20px;
           background-color: white;
-          margin: 0 15px 0 5%; 
+          margin: 0 0 0 15px;
           border-radius: 5px;
 
         .sidebar__item {
