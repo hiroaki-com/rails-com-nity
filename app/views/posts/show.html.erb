@@ -43,7 +43,7 @@
             <% end %>
 
             <div class="post-times">
-               <%= @post.created_at.strftime('%Y.%m.%d_%H : %M')%>
+               <%= @post.created_at.strftime('%Y/%m/%d  %H : %M')%>
             </div>
             
             <%#  ゲスト用に右記載はコメントアウト<% if @post.user ==  current_user %> 
