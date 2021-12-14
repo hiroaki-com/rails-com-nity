@@ -1,6 +1,7 @@
 class ProfilesController < ApplicationController
     before_action :authenticate_user!
     before_action :find_profile, only: [:show, :edit, :update]
+    
 
     def show      
     end
@@ -12,6 +13,8 @@ class ProfilesController < ApplicationController
     end
 
     def edit 
+        #　URLから直接自分以外のユーザーのプロフィール編集画面へアクセスすることを制限(※befor_actionでの実装ができなかった)
+        return redirect_to root_path, alert: "他ユーザーへのアクセス権限がありません" if @profile.user != current_user
     end
 
     def create
@@ -48,4 +51,5 @@ class ProfilesController < ApplicationController
             :name, :learning_history, :purpose, :image
         )
 
+    
 end
