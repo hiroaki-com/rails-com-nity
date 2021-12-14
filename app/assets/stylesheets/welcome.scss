@@ -22,13 +22,14 @@
 
     .content-wrapper {
         // justify-content: space-between; 　// コンテントとサイドバーの空白を消すために無効化
-        margin: 0 ;        
+        margin: 0 ;
+        @media screen and (min-width: 651px) {
+           padding: 0 7%;
+        }
         display: -webkit-flex;
         display: flex;
-        @media screen and (min-width: 651px) { //PCサイズの時のみ両横の余白を出現
-          margin-right: 5%;
-          margin-left: 5%;
-      }
+        
+        
 
        .content-block {
             border: 0px solid #000;
@@ -36,7 +37,8 @@
             background-color: #f6f6f6;
             display: block;
             border-radius: 5px;
-            width: 600px;
+            max-width: 651px;
+            
             
           
         .content { 
@@ -128,7 +130,7 @@
           border-right: 2px solid rgba(154, 154, 154, 0.601);
           border-bottom: 2px solid rgba(154, 154, 154, 0.601);
           border-left: 2px solid rgba(154, 154, 154, 0.601);          
-          width: auto;
+          width: 100px;
           padding: 20px;
           background-color: white;
           margin: 0 0 0 3%;
@@ -141,7 +143,7 @@
          .box {            
               // border: 1px solid rgba(154, 154, 154, 0.601);
               background-color: rgba(185, 185, 185, 0.402);
-              width: 150px;
+              width: 100px;
               height: 100px;
               margin: 10px auto;
               border-radius: 5px;
