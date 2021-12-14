@@ -30,7 +30,7 @@ h2 {
         display: flex;
         align-items: start; /* アイテムを先頭(上部)にまとめる */
         justify-content: space-between;
-        padding: 0;
+        padding: 0 7%;
         height: 80px;
         background: linear-gradient( rgba(253, 253, 253, 0.855) 75%, rgba(255, 255, 255, 0) 30%); /* 上下で線形グラデーションをかけ、下部を透明にすることで配置編集を簡易化 */
         /* ヘッダー固定作業 cf.posts.css */
@@ -51,7 +51,7 @@ h2 {
             color: #fff;          /* ロゴの文字異色 rgba(51, 51, 51, 0.998)　*/
             font-family: cursive,Times, serif; 
             padding: 2px 17px; 
-            margin-left: 50px; 
+            
             /* background-color: white;  ロゴの背景色　*/
             border-radius: 3px;
             background:linear-gradient( #980a05dc, #ff4535dd);
@@ -74,7 +74,7 @@ h2 {
     /* ナブ(PC版に反映)------------------------------------------------------------------------------- */
     #nav {
         list-style: none;
-        margin-right: 50px;
+        
         
         li {
             width: 85px;
