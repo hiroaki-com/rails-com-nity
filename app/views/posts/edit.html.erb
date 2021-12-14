@@ -1,5 +1,14 @@
 <div class="padding-both-side">
     <h2>投稿の編集</h2>
+
+    <%# エラーメッセージ %>
+    <% @post.errors.full_messages.each do |message| %>
+            <div class="form-error">
+                <%= message %>
+            </div>
+    <% end %>
+    <%# エラーメッセージ %>
+    
     <%= render 'form' %>
 
     <div>

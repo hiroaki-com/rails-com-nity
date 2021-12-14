@@ -353,7 +353,7 @@ footer p {
     }
 }
 
-/* notice.alert------------------------------------------------------------- */
+/* notice.alert-form-error------------------------------------------------------------ */
 .toast {
     margin-bottom: 10px;
     text-align: center;
@@ -376,6 +376,20 @@ footer p {
     border-radius: 5px;
     font-size: 13px;
 }
+
+// エラーメッセージ
+.form-error {
+    font-size: 13px; 
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 3px 0;
+    min-width: 120px;
+    max-width: 100%;
+    color: #fff;
+    background:#ff4535dd;
+    border-radius: 15px;
+}
+
 
 /* 新規登録・ログイン画面・プロフ・編集・などフォーム左右の空白調整----------------------------------*/
 .padding-both-side {

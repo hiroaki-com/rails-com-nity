@@ -1,5 +1,14 @@
 <div class="padding-both-side">
     <h2>プロフィール作成</h2>
+
+    <%# エラーメッセージ %>
+    <% @profile.errors.full_messages.each do |message| %>
+        <div class="form-error">
+            <%= message %>
+        </div>
+    <% end %>
+    <%# エラーメッセージ %>
+
     <%= render 'form' %>
 
      <div>
