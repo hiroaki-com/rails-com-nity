@@ -17,7 +17,7 @@ class ProfilesController < ApplicationController
     def create
         @profile = Profile.new(profile_params)
         @profile.user = current_user
-        if @profile.save!
+        if @profile.save
             redirect_to root_path, notice: "プロフィール情報の登録が完了しました" 
         else
             render :new

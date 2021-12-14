@@ -29,7 +29,7 @@
 
   <%= link_to("/posts/#{post.id}") do %>
         <div class="text">
-          <p><%= post.content %></p>   
+          <p><%=safe_join(post.content.split("\n"),tag(:br))%></p>  <%#  ←contentの改行処理 %> 
         </div>
      
      <% if post.images.attached? %>

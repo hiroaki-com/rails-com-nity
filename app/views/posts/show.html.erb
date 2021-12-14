@@ -30,7 +30,7 @@
             </div>
     
             <div class="text">
-              <p><%= @post.content %></p>
+              <p><%=safe_join(@post.content.split("\n"),tag(:br))%></p>  <%# content内で改行を反映させる処理 %>
             </div>
 
             <%#  画像投稿がある際に出現するエリア %>
