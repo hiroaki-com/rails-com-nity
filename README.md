@@ -1,6 +1,7 @@
 # README
 
   Yahooファイナンス掲示板風のコミュニティサイト
+  
   Responsive design supported
 
   macOS BigSur '11.6.1'
