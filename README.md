@@ -1,5 +1,7 @@
 # README
 
+  Yahooファイナンス掲示板風のコミュニティサイト
+
   macOS BigSur '11.6.1'
   
   docker-compose '3.3'
