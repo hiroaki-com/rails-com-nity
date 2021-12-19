@@ -6,11 +6,11 @@
         <div class="content">
             <div class="user-about">
                 <div class="image">
-                 <% if @post.user.image.attached? %>
-                  <%= image_tag @post.user.image %>
-                 <% else %>
-                   <%= image_tag "nouser.png"%>
-                 <% end %>
+                    <% if @post.user.image.attached? %>
+                     <%= link_to image_tag(@post.user.image), new_profile_path %> <%#  ← 新規投稿画面から弾かれ、プロフィール編集画面へ遷移 %>
+                    <% else %>
+                     <%= link_to image_tag("nouser.png"), new_profile_path %> 
+                    <% end %>                
                 </div>
     
                 <div class="profile">

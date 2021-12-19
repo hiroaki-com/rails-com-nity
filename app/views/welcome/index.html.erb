@@ -5,7 +5,7 @@
      <div class="user-about">
        <div class="image">
         <% if post.user.image.attached? %>
-         <%= link_to image_tag(post.user.image), new_profile_path %> <%#  ← 新規投稿画面から弾かれ、プロフィール編集画面へ遷移 %>
+         <%= link_to image_tag(post.user.image), new_profile_path %> <%#  ← 新規投稿画面から弾かれ、プロフィール編集画面へ遷移_一覧と詳細で共有 %>
         <% else %>
          <%= link_to image_tag("nouser.png"), new_profile_path %> 
         <% end %>
