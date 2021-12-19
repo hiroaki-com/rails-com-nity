@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-  before_action :authenticate_user!
+  before_action :authenticate_user!, except: [:index]
   
   def after_sign_out_path_for(resource)
     new_user_session_path # ログアウト後に遷移するpathを設定
