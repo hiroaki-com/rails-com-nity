@@ -30,7 +30,8 @@
             </div>
     
             <div class="text">
-              <p><%=safe_join(@post.content.split("\n"),tag(:br))%></p>  <%# content内で改行を反映させる処理 %>
+              <p><%= raw Rinku.auto_link safe_join(@post.content.split("\n"),tag(:br))%></p>  <%# content内で改行を反映させる処理 + リンクから飛べるようにする処理 %>
+              <%#=safe_join(@post.content.split("\n"),tag(:br))%>
             </div>
 
             <%#  画像投稿がある際に出現するエリア %>

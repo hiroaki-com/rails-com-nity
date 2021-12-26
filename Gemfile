@@ -52,3 +52,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
 gem 'rails_admin', '~> 2.0.0.beta'
+
+#投稿されたリンクから飛べるようにする　https://qiita.com/ngron/items/151e1e4b94319bcbdeec
+gem 'rinku'
