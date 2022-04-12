@@ -1,7 +1,9 @@
 ## `Yahooファイナンス(掲示板)`風のコミュニティサイト
 
 #### URL
-https://rails-community2.herokuapp.com/
+https://rails-community2.herokuapp.com/users/sign_in
+
+-> `ゲストログインボタン`よりご覧になれます。
 
 #### 活用技術
 ```
