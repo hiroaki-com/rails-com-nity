@@ -1,11 +1,7 @@
-# README
+## `Yahooファイナンス(掲示板)`風のコミュニティサイト
 
-  Yahooファイナンス掲示板風のコミュニティサイト
-  
-  Responsive design supported
-
-  macOS BigSur '11.6.1'
-  
+#### 活用技術
+```
   docker-compose '3.3'
 
   ruby '2.6.2'
@@ -16,8 +12,11 @@
   
   scss (none bootstrap)
   
+  Responsive design supported
+  
   javascript
   
   heroku
+```  
+    
   
-# rails-community2
