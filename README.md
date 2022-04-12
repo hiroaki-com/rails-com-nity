@@ -1,5 +1,8 @@
 ## `Yahooファイナンス(掲示板)`風のコミュニティサイト
 
+#### URL
+https://rails-community2.herokuapp.com/
+
 #### 活用技術
 ```
   docker-compose '3.3'
