@@ -1,4 +1,5 @@
 ## `Yahooファイナンス(掲示板)`風のコミュニティサイト
+ー　community software platform　ー
 
 #### URL
 https://rails-community2.herokuapp.com/users/sign_in
