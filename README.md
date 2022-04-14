@@ -6,6 +6,11 @@ https://rails-community2.herokuapp.com/users/sign_in
 
 -> `ゲストログインボタン`よりご覧になれます。
 
+#### UI
+
+<img width="648" alt="スクリーンショット 2022-04-14 16 31 42" src="https://user-images.githubusercontent.com/92197575/163336268-7cd53ec1-81a5-486f-8cbf-394003cce31c.png">
+
+
 #### 活用技術
 ```
   docker-compose '3.3'
