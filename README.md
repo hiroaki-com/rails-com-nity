@@ -1,4 +1,4 @@
-## `Yahooファイナンス(掲示板)`風のコミュニティサイト
+## コミュニティサイト
 ー　community software platform　ー
 
 #### ※ 2022/12/04現在、Heroku無償枠終了に伴いサイト停止中
@@ -10,7 +10,7 @@ https://rails-community2.herokuapp.com/users/sign_in
 
 #### UI
 
-<img width="1025" alt="スクリーンショット 2022-04-14 16 35 53" src="https://user-images.githubusercontent.com/92197575/163337409-e35cf7c8-84bc-441d-82bd-a3881a0ab9d7.png">
+https://user-images.githubusercontent.com/92197575/205470084-68aebbef-fe37-44bc-a72a-6ee614c610f1.mov
 
 
 #### 活用技術
