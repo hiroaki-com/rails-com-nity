@@ -10,8 +10,7 @@ https://rails-community2.herokuapp.com/users/sign_in
 
 #### UI
 
-https://user-images.githubusercontent.com/92197575/205470084-68aebbef-fe37-44bc-a72a-6ee614c610f1.mov
-
+https://user-images.githubusercontent.com/92197575/205470856-4f9246c9-e341-43e6-b0a5-83c43ce8dea4.mov
 
 #### 活用技術
 ```
