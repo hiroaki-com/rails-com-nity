@@ -1,6 +1,8 @@
 ## `Yahooファイナンス(掲示板)`風のコミュニティサイト
 ー　community software platform　ー
 
+#### ※ 2022/12/04現在、Heroku無償枠終了に伴いサイト停止中
+
 #### URL
 https://rails-community2.herokuapp.com/users/sign_in
 
